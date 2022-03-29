@@ -1,0 +1,65 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+.warp { width: 1200px; height: 1000px; margin: 0 auto; position: relative;}
+
+#popup {width: 300px; height: 400px; position: absolute; z-index: 10; background: #000; left: 50%; top: 50%; margin-left: -150px; margin-top: -200px; display: none;}
+#popup h3 {width: 100%; height: 40px; color: #fff; line-height: 40px; text-indent: 20px; border-bottom: 1px solid #fff;}
+#popup div {color: #fff; padding: 20px; background: red;}
+#popup button {width: 80px; height: 30px; float: right; margin-top: 20px; margin-right: 20px; cursor: pointer;}
+
+#btn_popup {display: none;}
+/* #btn_popup:checked ~ #popup {display: block;}
+#popup button label {display: block; width: 100%; height: 100%; line-height: 30px;} */
+
+
+.header {width: 1200px; height: 100px; }
+.header h1 {width: 200px; height: 100px; float: left; background-color: rgb(97, 57, 5); transition: 0.3s;}
+.header h1:hover {width: 400px; }
+
+.header h1 img {transition: 0.3s; width: 200px;}
+.header h1:hover img {width: 400px;}
+
+.header .gnb {width: 600px; height: 50px; float: right; background-color: rgb(189, 187, 187); margin-top: 50px; }
+.header .gnb li {width: 150px; height: 50px; text-align: center; line-height: 50px; float: left;  position: relative;}
+
+.header .gnb li .lnb1 {width: 150px; height: 0px; overflow: hidden; z-index: 10; position:absolute; background-color: rgb(141, 141, 141, 0.7); transition: 0.5s;}
+.header .gnb li .lnb1 li {width: 100%; height: 40px; line-height: 40px;}
+.header .gnb li:hover .lnb1{height: 160px; }
+
+.header .gnb li a .line {width: 0px; height: 2px; background-color: crimson; position: absolute; left: 0; bottom: 0; transition: width 0.5s;}
+.header .gnb li:hover a .line{width: 150px;}
+
+
+
+.visual {width: 1200px; height: 300px; background-color: blueviolet;}
+
+
+
+.section {width: 1200px; height: 200px;}
+.section div {width: 370px; height: 180px; float: left; margin: 10px 0 0 20px;}
+.section div.news_box {background-color: #555;}
+.news_box h2 {width: 370px; height: 40px;background-color: darkgreen;}
+.news_box ul {width: 370px; height: 140px;background-color: rgb(68, 139, 68); float: left;}
+.news_box ul li {width: 290px; height: 26px; background-color: rgb(120, 161, 161); float: left;}
+.news_box ul li.day {width: 80px; font-size: 14px;}
+
+
+.section div.banner_box {background-color: #777;}
+.banner_box h2 {width: 370px; height: 40px;background-color: darkgreen;}
+.banner_box ul {width: 370px; height: 140px;background-color: rgb(68, 139, 68); float: left;}
+.banner_box ul li {width: 300px; height: 22px; background-color: brown; margin: 5px auto 0 auto;}
+
+
+.section div.baro_box {background-color: #999;}
+.baro_box h2 {width: 370px; height: 40px;background-color: darkgreen;}
+.baro_box ul {width: 370px; height: 140px;background-color: rgb(68, 139, 68); float: left;}
+.baro_box ul li {width: 300px; height: 35px; background-color: brown; margin: 10px auto 0 auto;}
+
+
+.footer {width: 1200px;height: 100px; background:red;}
+.footer h1 {width: 200px; height: 100px; float:left; background-color: blue;}
+.footer .copyright { width: 700px; height: 100px; float: left; background-color: aquamarine;}
+.footer .sns_box { width: 300px; height: 60px; float: left; background-color: cadetblue; margin-top: 20px;}
+
+   

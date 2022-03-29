@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+.wrap {width: 1200px; height: 740px; margin: 0 auto}
+
+.header{width: 1200px; height: 140px;}
+.header h1 {width: 65px; height: 60px; margin: 10px auto 0; }
+.header .menu {width: 600px; height: 60px; margin: 10px auto;}
+.header .menu li {width: 150px; height: 50px; margin: 10px auto; float: left; text-align: center;}
+
+.visual{width: 1200px; height: 300px; background-color: rgb(192, 180, 216);}
+
+.section{width: 1200px; height: 200px;}
+.section div {width: 300px; height: 200px; float: left; margin: 5px 0 auto;}
+.section .notice{width: 400px; height: 200px; float: left;}
+.section .notice h2 {width: 300px; height: 30px;  margin: 0 auto; text-align: center; background-color: khaki}
+.section .notice li {width: 200px; height: 28px; float: left; margin: 5px 0 auto; text-indent: 10px;}
+.section .notice li.day {width: 110px; height: 28px; float: right;}
+
+
+.section .banner{width: 400px; height: 200px; float: left;}
+.section .banner{width: 400px; height: 200px; float: left;}
+.section .banner h2 {width: 300px; height: 30px;  margin: 0 auto; text-align: center; background-color: khaki}
+.section .banner li {width: 300px; height: 30px; margin: 0 auto; margin-top: 15px; text-align: center;}
+
+
+.section .barogo{width: 400px; height: 200px; float: left;}
+.section .barogo{width: 400px; height: 200px; float: left;}
+.section .barogo h2 {width: 300px; height: 30px; margin: 0 auto; text-align: center; background-color: khaki}
+.section .barogo li {width: 300px; height: 30px; margin: 0 auto; margin-top: 30px; text-align: center;}
+
+
+.footer{width: 1200px; height: 100px; background-color: rgb(48, 17, 39); }
+.footer h1 {width: 200px; height: 50px; float: left; margin: 20px 100px 0 0; text-align: center; color:antiquewhite}
+.footer .copyright {width: 600px; height: 50px; float: left;  margin: 20px 0; text-align: center; color:antiquewhite}
+.footer .sns {width: 200px; height: 80px; float: right;  text-align: center; color:antiquewhite}
