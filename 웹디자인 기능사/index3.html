@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--     <input type="checkbox" id="btn_popup" > -->
+
+    <div id="popup">
+        <h3>타이틀</h3>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dignissimos delectus perspiciatis? In dolore tempore suscipit voluptatum dolorum earum quae mollitia, distinctio maxime, consequatur sunt vel! Corrupti, sint! Ut, eveniet magni fuga autem, voluptatum impedit nesciunt aspernatur temporibus, accusamus tempora mollitia ex sit rem asperiores? Aliquid illum .</div>
+        <button id="btn_close"<label for="btn_popup">닫기</label></button>
+    </div>
+
+        
+    </div>
+    <div class="warp">
+        <div class="header">
+            <h1>
+                <img src="http://picsum.photos/200/100" alt="">
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#">   
+                        탑
+                        <span class="line"></span> 
+                    </a>
+                    <ul class="lnb1">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                    <span class="line"></span>
+                    아우터</a>
+                    <ul class="lnb1">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                    <span class="line"></span>
+                    팬츠</a>
+                    <ul class="lnb1">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">
+                    <span class="line"></span>
+                    악세사리</a>
+                    <ul class="lnb1">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="visual">
+            <img src="http://picsum.photos/1200/300" alt="">
+        </div>
+
+
+        <div class="section">
+            <div class="news_box">
+                <h2>공지사항</h2>
+                <ul>
+                    <li id="merong">
+                        내용내용
+                        <!-- <label for="btn_popup">
+                            내용내용
+                        </label> -->
+                    </li>
+                    <li class="day"><a href="#">2022-02-08</a></li>
+                    <li><a href="#">내용내용</a></li>
+                    <li class="day"><a href="#">2022-02-08</a></li>
+                    <li><a href="#">내용내용</a></li>
+                    <li class="day"><a href="#">2022-02-08</a></li>
+                    <li><a href="#">내용내용</a></li>
+                    <li class="day"><a href="#">2022-02-08</a></li>
+                    <li><a href="#">내용내용</a></li>
+                    <li class="day"><a href="#">2022-02-08</a></li>
+                </ul>
+            </div>
+            <div class="banner_box">
+                <h2>배너</h2>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="baro_box">
+                <h2>아이콘 콘텐츠</h2>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <h1></h1>
+            <div class="copyright"></div>
+            <ul class="sns_box">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <script>
+        /* "메롱"을 클릭하면 할일을 해라 중괄호 안에 있는  {
+            "팝업"을 나타내라
+        } */
+
+        /* "메롱" 선택 -> 클릭 -> 일을 해라 중괄호 안에 있는  - {
+            "팝업" 선책 후 스타일 중 display를 block으로 바꿔라
+        } */
+
+        document.getElementById('merong').addEventListener('click', function(){
+            document.getElementById('popup').style.display = 'block'
+        })
+
+        document.getElementById('btn_close').addEventListener('click', function(){
+            document.getElementById('popup').style.display = 'none'
+        })
+
+    </script> -->
+    
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/jquery-ui.js"> </script>
+    <script>
+        $('#merong').click(function(){
+            $('#popup').fadeIn()
+        })
+        $('#popup button').click(function(){
+            $('#popup').fadeOut()
+        })
+        $('#popup').draggable()
+    </script>
+</body>
+</html>
