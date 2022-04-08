@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+a {color:#333; text-decoration: none;}
+li {list-style: none;}
+
+
+/* div {width:1100px; height: 150px; background: blue; color:#fff; font-size: 30px; text-align:center}
+
+.merong {height: 700px; margin: 1px 0;} */
+
+
+
+/* 
+#wrap {width: 1100px; height:auto; margin:0 auto; border:10px solid red; }
+#wrap:after {content: ""; display: block; clear: both;}
+
+#wrap > * {color: #fff; font-size: 50px; text-align: center;}
+
+header, footer {width: 1100px; height: 150px; background: #f3a683; }
+
+aside {width: 300px; height: 700px; background: #3dc1d3; float: left;}
+
+section {width: 700px; height: 700px; background: #f78fb3; float: right;}
+
+.dong_box {border:2px solid lime; height: 100px; margin-top: 200px; display: flex; justify-content: space-evenly; }
+
+.dong_box div {width: 100px; height: 100px; background: #c44569; border-radius: 50%; }
+
+footer {float: left; clear: both;} */
+
+
+aside {width: 20%; height: 1000px; float: left; background: #f3a683; min-width: 200px; }
+
+header {height: 200px; float: left; background: #3dc1d3; }
+section {height: 600px; float: left; background: #c44569;}
+footer {height: 200px; float: left; background: #3dc1d3;}
+
+.container {width: 80%; float: left; }
+header, section, footer {width: 100%;}
+
+@media screen and (max-width:1015px){
+    .container {width: calc(100% - 200px);}
+}
+/* 미디어쿼리는 하나의 조검 */
