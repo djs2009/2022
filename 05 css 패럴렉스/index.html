@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce about Me</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo-w2.png" alt=""></h1>
+        <ul class="gnb">
+            <li><a href="#">Halo, It's me!</a></li>
+            <li><a href="#">I Like</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Talk to me</a></li>
+        </ul>
+    </header>
+    <section id="s1">
+        <article>
+            <div>
+                <strong>신</strong>
+                <div class="text">
+                    <em>날땐 <b>방방</b>뛰고 메뉴를 뚝딱</em>
+                    <p>ESFP-T 
+                        <span>주위에 있으면 인생이 지루할 새가 없을 정도로 즉흥적이며 열정과 에너지가 넘치는 연예인형</span>
+                    </p>
+                </div>
+                <figure>
+                    <img src="images/esfp-entertainer.svg" alt="">
+                </figure>
+            </div>
+        </article>
+        
+    </section>
+
+
+    <section id="s2">
+        <article>
+            <figure>
+                <img src="images/game_1.png" alt="">
+            </figure>
+            <strong>는 시간에 하는 GAME</strong>
+            <p>
+                이제 그만 끊고<br>
+                그 시간에 한글자라도 더<br>
+                디다보고 싶다
+            </p>
+        </article>
+    </section>
+
+
+    <section id="s3">
+        <div class="text_box">
+            <div class="text">
+                의뢰자들도 맘에들어한 작업물모음
+            </div>
+            <button type="button">CLICK!</button>
+        </div>
+
+        <ul>
+            <div class="gallery">
+                <li><a href="https://www.naver.com/" target="_blank"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/258/284" alt=""></a></li>
+            </div>
+        </ul>
+        <div class="btn_close"></div>
+    </section>
+
+
+    <section id="s4">
+        <iframe src="https://www.nate.com/" frameborder="0"></iframe>
+    </section>
+
+    <div class="btn"><a href="#"></a></div>
+
+
+
+
+
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var winH;
+            
+            $('.gnb li').click(function(){
+                // alert($(this).index())
+                winH = $(window).height();
+                var go = $(this).index();
+
+            
+                $('html').animate({scrollTop:winH*go})
+
+                if(winH*go == 0){
+                $('.gnb a').css({color:'white'})
+                $('.gnb a').eq(0).css({color:'orange'})
+                }
+                if(winH*go >= winH*1){
+                $('.gnb a').css({color:'white'})
+                $('.gnb a').eq(1).css({color:'orange'})
+                }
+                if(winH*go >= winH*2){
+                $('.gnb a').css({color:'white'})
+                $('.gnb a').eq(2).css({color:'orange'})
+                }
+                if(winH*go >= winH*3){
+                $('.gnb a').css({color:'purple'})
+                $('.gnb a').eq(3).css({color:'orange'})
+                }
+            
+            })
+
+            
+            var scrT
+            $(window).scroll(function(){
+                scrT = $(window).scrollTop();
+                
+                setTimeout(nolja, 500)
+            })
+
+            $(window).resize(function(){
+                scrT = $(window).scrollTop();
+
+            })
+
+
+            function nolja(){
+                if(scrT >= 0){
+                    $('.gnb a').css({color:'white'});
+                    $('.gnb a').eq(0).css({color:'orange'});
+                }
+                if(scrT >= winH*1){
+                    $('.gnb a').css({color:'white'});
+                    $('.gnb a').eq(1).css({color:'orange'});
+                }
+                if(scrT >= winH*2){
+                    $('.gnb a').css({color:'white'});
+                    $('.gnb a').eq(2).css({color:'orange'});
+                }
+                if(scrT >= winH*3){
+                    $('.gnb a').css({color:'purple'});
+                    $('.gnb a').eq(3).css({color:'orange'});
+                }
+            }
+
+
+            $('.btn a').click(function(){
+                $('html').animate({scrollTop:0})
+            })
+
+            $('section#s3 button').click(function(){
+                $('.gallery').fadeIn(400)
+                $('.btn_close').show()
+                $('.text_box').hide()
+                
+            })
+
+            $('section#s3 .btn_close').click(function(){
+                $('.text_box').show(400)
+                $('.gallery').fadeOut(400)
+                $(this).hide()
+            })
+                
+        })
+    </script>
+
+</body>
+
+</html>
