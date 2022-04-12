@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+html body {height: 100%;}
+a {text-decoration: none; color: #7b7c77;}
+
+body {background-image: url("../images/back1.jpg");
+        background-repeat: no-repeat;
+        /* ackground-position: left bottom ; */
+        padding-top: 35px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+.logo {width: 120px; height: 150px; margin: 33px auto 73px auto;}
+.logo figure {width: 100px; height: 100px; margin: 0 auto; border-radius: 20%; overflow: hidden; border: 4px solid rgba(255,255,255,0.5);}
+.logo figure img {width: 100%; height: 100%;}
+
+.logo h3 {width: 100%; height: 20px; margin-top: 10px; font-size: 14px; color: rgb(110, 107, 107); text-align:center; letter-spacing: 2px; font-family:"GangwonEdu_OTFBoldA";}
+
+.logo h2 {width: 100%; height: 22px; margin-top: 3px; font-size: 27px; color: rgb(80, 77, 77); text-align:center; font-family:"GangwonEdu_OTFBoldA";;}
+
+.btns_box {width: 68.70%; height: 240px; margin: 0 auto; }
+.btns_box a {width: 100%; height: 40px; line-height: 45px; text-align :center; display: block; font-weight: normal;font-family:"GangwonEdu_OTFBoldA"; font-size: 20px; background-image: url(../images/button_3.png); position: relative; margin: 0 auto 28px; transition: width 0.5s;}
+
+.btns_box a:hover {width: 50%;}
+
+/* border: 3px solid rgb(241, 241, 241); */
+
+/* .btns_box a.call {background-color: rgba(255,255,255,0.2);}
+.btns_box a.sms {background-color: rgba(255,255,255,0.2);} 
+.btns_box a.map {background-color: rgba(255,255,255,0.2);}
+.btns_box a.kakao {background-color: rgba(255,255,255,0.2);} */
+
+.btns_box a .left {background-image: url(../images/button_1.png); width: 25px; height: 40px; position: absolute; left: -25px;}
+.btns_box a .right {background-image: url(../images/button_2.png); width: 25px; height: 40px; position: absolute; right: -25px;}
+
+
+.map_box {width: 68.70%; height: 400px; margin: 0 auto 80px;}
