@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전지우 명함</title>
+    <link rel="stylesheet" href="css/namecard.css">
+</head>
+<body>
+    <div class="logo">
+        <figure>
+            <img src="images/photo1.jpg" alt="전지우사진">
+        </figure>
+        <h3>WEBEDITOR</h3>
+        <h2>전지우</h2>
+    </div>
+    <div class="btns_box">
+        <a href="tel:010-5267-6705" class="call">
+            <span class="left"></span>
+            <span class="right"></span>
+            Call
+        </a>
+            
+        <a href="sms:010-5267-6705" class="sms">
+            <span class="left"></span>
+            <span class="right"></span>
+            Text
+        </a>
+        <a href="https://open.kakao.com/o/sWOT2dZd" class="kakao">
+            <span class="left"></span>
+            <span class="right"></span>
+            Kakao Talk
+        </a>
+<!--         <a href="http://kko.to/aSHnR7N4H" class="map" target="_blank">Location</a>-->    
+    </div>
+
+    <div class="map_box">
+                <!--
+            * 카카오맵 - 약도서비스
+            * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+            * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+        -->
+        <!-- 1. 약도 노드 -->
+        <div id="daumRoughmapContainer1644475147563" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+        <!-- 2. 설치 스크립트 -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1644475147563",
+                    "key" : "293xv",
+                    "mapWidth" : "",
+                    "mapHeight" : "200"
+                }).render();
+            </script>
+        </script>
+    </div>
+</body>
+</html>
