@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+/* Layout */
+.center_box {min-width: 1043px; max-width: 1400px; margin: 0 auto; }
+
+#header {width: 100%; min-width: 1043px; height: 180px;}
+#visual_main {width: 100%; min-width: 1043px; height: 650px; background: url("../images/visual_main.png") center top no-repeat;}
+#section_box {}
+.section1 {width: 100%; min-width: 1043px; height: 377px;}
+.section2 {width: 100%; min-width: 1043px; height: 557px; background: url("../images/sec2_bg.png") no-repeat center top;}
+.section3 {width: 100%; min-width: 1043px; height: 245px; background: #e9e9de; }
+.section4 {width: 100%; min-width: 1043px; height: 800px;background: #f4f7fa;}
+#footer {width: 1043px; height: 235px;}
+
+
+/* Header */
+#header .top_btn {width: 250px; height: 30px; float: left; margin-left: 80px; margin-top: 10px;}
+#header .top_btn a {width: 120px; height: 30px; line-height: 30px; color: #fff; background: #00a0d9; border-radius: 15px; float: left; text-align: center; font-size: 15px; transition: .35s;}
+#header .top_btn a:nth-child(2) {background: #7c9ca8 ; margin-left: 10px;}
+
+#header .top_btn a:nth-child(1):hover {background: #0088b9; }
+#header .top_btn a:nth-child(2):hover {background: #6a8691 ;}
+
+#header .login {width: 300px; height: 45px;  line-height: 45px;  float: right; text-align: right; }
+#header .login a {font-size: 15px; padding: 0 15px; color: #777; position: relative; }
+#header .login a::after {content: ""; width: 2px; height: 2px; background: #777; position: absolute; left: 4px; top: 10px;}
+#header .login a:hover {text-decoration-line: underline; text-decoration-color: #777; }
+#header .login > img { float: right;}
+
+#header .logout {width: 275px; height: 45px; float: right; text-align: right; background: #7c9ca8; display: none;}
+#header .logout a {padding: 0 15px; color: #777; position: relative;}
+#header .logout a::after {content: ""; width: 2px; height: 2px; background: #777; position: absolute; left: 4px; top: 10px;}
+#header .logout a:hover {text-decoration-line: underline; text-decoration-color: #777; }
+
+#header h2 {width: 215px; height: 65px; position: absolute; left: 50%; top: 60px; transform: translateX(-50%); background:  url("../images/header-logo.png") no-repeat;}
+
+#header .gnb {width: 100%; float: left; margin-top: 68px; font-size: 0; text-align: center; }
+#header .gnb > li {height: 65px; line-height: 65px; display: inline-block; font-size: 18px; position: relative;}
+#header .gnb > li:hover > a {color:#00a0d9}
+#header .gnb > li > a {color: #222; display: block; padding: 0 30px; transition: .3s;}
+
+#header .gnb .lnb {position: absolute; width: 100%; z-index: 7; font-size: 0; margin-top: 10px; display: none;}
+#header .gnb .lnb li {display: block; height: 40px; line-height: 40px; font-size: 15px; text-align: center;}
+#header .gnb .lnb li a {display: block; color: #333; transition: .2s;}
+#header .gnb .lnb li:hover a {color: #00a0d9;}
+
+.lnb_bg {position: absolute; background: rgba(255,255,255,0.9); width: 100%; height: 210px; z-index: 5;  left: 0; top: 180px; box-shadow: 0 4px 6px rgb(226, 226, 226) inset; display: none;}
