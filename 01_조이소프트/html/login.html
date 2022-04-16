@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Soft</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/joy.css">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/f3c9d07c5d.js"></script>
+
+</head>
+<body>
+    <? include "include/header.html" ?>
+
+
+    <div id="visual_sub">
+        <img src="images/visual_sub.jpg" alt="">
+    </div>
+
+
+    <div id="section_sub">
+        <div class="center">
+            
+            <div class="login">
+                <h3>로그인</h3>
+
+                <div class="article">
+                    <form action="index.html" method="gwt">
+                        <!-- post:서버 get:페이지 -->
+                        <fieldset>
+                            <legend>로그인</legend>
+                            <input type="text" name="id" required placeholder="아이디를 적어주세요">
+                            <input type="password" name="pw" required placeholder="비밀번호를 적어주세요">
+                            <div class="idsave">
+                                <input type="checkbox" id="idcheck"> 
+                                
+                                <label for="idcheck">
+                                    <span>
+                                        <i></i>
+                                    </span>
+                                    <p>아이디 저장</p> 
+                                </label> 
+                            </div>
+                            <button type="submit">로그인</button>
+                            <div class="findbox">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#">비밀번호 찾기</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <div class="center">
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
