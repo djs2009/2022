@@ -7,7 +7,7 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 
 /*layouts*/
 #header {width: 100%; min-width:1043px; height: 180px; transition: .5s; position: fixed; top:0; z-index: 7; background: #f3f3f3;}
-#visual_main {width: 100%; min-width:1043px; height: 650px; background: url('../images/main1.jpg') center top; background-size: cover; position: relative; margin-top: 180px;}
+#visual_main {width: 100%; min-width:1043px; height: 650px; background: url('../images/main1.jpg') center top; background-size: cover; position: relative; margin-top: 180px; transition: .5s;}
 .section1 {width: 100%; min-width:1043px; height: 377px;}
 .section2 {width: 100%; min-width:1043px; height: 454px; background: url('../images/bg_section2.jpg') center bottom; background-attachment: fixed;;}
 .section3 {width: 100%; min-width:1043px; height: 245px;}
@@ -15,6 +15,7 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 #footer {width: 100%; min-width:1043px; height: 225px; background: #66552c;}
 
 .center_box {width: 1043px; margin: 0 auto; position: relative;}
+.center_box_1100 {width: 1100px; margin: 0 auto; position: relative;}
 
 
 
@@ -98,6 +99,8 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 .notice_box .article li {width: 100%; height: 32px; line-height: 32px; }
 .notice_box .article li a {color: #fff;}
 
+#visual_main.action {transform: scale(0.9);}
+
 
 
 /*section_box*/
@@ -130,8 +133,11 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 .section2 h3 {width: 100%; height: 60px; line-height: 29px; text-align: center; font-size: 19px; color: #fff; }
 .section2 h3 span {color: #beca28;}
 
-.section2 .article2 {width: 100%; margin-top: 40px; text-align: center; font-size: 0;}
+.section2 .article2 {width: 100%; margin-top: 40px; text-align: center; font-size: 0; perspective: 1000px;}
 .section2 .article2 ul {width: 290px; height: 130px; background: rgba(255,255,255,0.2); display: inline-block; margin:0 10px 20px 10px; padding-top: 35px; box-sizing: border-box; }
+
+.section2 .article2 a {transition: .5s; transform: rotateY(90deg); display: inline-block; opacity: 0;}
+.section2 .article2.action a {transform: rotateY(0deg); opacity: 1;}
 
 .section2 .article2 ul li.title {font-size: 22px; color: #fff; height: 30px;}
 .section2 .article2 ul li.ex {font-size: 13px; color: #afc188; width: 190px; margin:0 auto}
@@ -219,3 +225,61 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 
 
 .section4 .article4 li:hover span {right: 0; color:rgba(255,255,255,1); }
+
+
+
+
+
+
+
+
+
+#visual_sub {background: url("../images/bg_sub.jpg") center 0px; width: 100%; min-width: 1043px; height: 150px; margin-top: 180px; animation: sub_ani 3s forwards;}
+@keyframes sub_ani {
+    0% {background-position: 0px;}
+    100% {background-position: -200px;}
+}
+
+
+#visual_sub .visual_text {width: 220px; height: 60px; position: absolute; left: 50%;margin-top: 60px; margin-left: -485px; font-size: 30px; line-height: 24px; font-weight: 200; animation: subtext 3s forwards;}
+@keyframes subtext {
+    0% {margin-left: -200px;}
+    100% {margin-left: -485px;}
+}
+
+
+#visual_sub .visual_text span {font-size: 14px; background: #506a01; color: #fff; padding: 2px 4px; }
+
+
+
+.snb_container {height: 53px; margin-top: 22px;}
+.snb_container .snb {height: 53px; width: 885px; margin: 0 auto; background: #fff; border-bottom: 2px solid #ddd; text-align: center;}
+.snb_container .snb li {display: inline-block; height: 53px; line-height: 53px; font-size: 16px;}
+.snb_container .snb li a {padding: 0 25px; display: block;}
+.snb_container .snb li.active, 
+.snb_container .snb li:hover 
+{text-decoration: underline; text-underline-position: under;}
+
+
+
+.content_container {text-align: center; padding-bottom: 100px;}
+.content_container h2 {width: 580px; height: 94px; line-height: 94px; font-size: 36px; text-align: center; border-bottom: 1px solid #ccc; margin: 28px auto 0 auto; letter-spacing: 0.3em;}
+
+.content_container p.ex {font-size: 30px; color: #879d0a; text-align: center; height: 80px; line-height: 80px; font-weight: 200; bottom: 1px solid red; display: inline-block; position: relative;}
+
+.content_container p.ex:before,
+.content_container p.ex::after {content: ""; position: absolute; width: 20px; height: 18px; top: -10px;}
+
+.content_container p.ex:before {content: url("../images/h2_l.png"); left: -30px;}
+.content_container p.ex::after {content: url("../images/h2_r.png"); right: -30px;}
+
+
+
+.greeting .article {margin-top: 65px; width: 100%; }
+.greeting .article ul {width: 350px; height: 420px; float: left; margin-right: 24px; }
+.greeting .article ul:nth-child(3n) {margin-right: 0;}
+.greeting .article li.thumb {width: 100%; height: 197px;}
+.greeting .article li.title {width: 100%; height: 60px; line-height: 60px;}
+.greeting .article li.content {padding-left: 25px; text-align: left;}
+.greeting .article li.content p {font-size: 15px; color: #555; line-height: 20px; margin-bottom: 10px;}
+.greeting .article li.content p::before {content: ""; position: absolute; width: 4px; height: 4px; background: #506a01; left: -12px; top: 7px;}
