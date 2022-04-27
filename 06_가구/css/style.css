@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+/* Layout */
+.center_box {width: 1200px; margin: 0 auto; }
+
+#header {width: 100%; min-width: 1043px; height: 180px; position: relative;}
+#visual_main {width: 100%; min-width: 1043px; height: 650px; position: relative;}
+#section_box {}
+.section1 {width: 100%; min-width: 1043px; height: 377px; text-align: center; font-size: 0;}
+.section2 {width: 100%; min-width: 1043px; height: 557px; background: url("../images/sec2_bg.png") no-repeat center top; text-align: center;}
+.section3 {width: 100%; min-width: 1043px; height: 300px; background: #e9e9de; text-align: center;}
+.section4 {width: 100%; min-width: 1043px; height: 800px;background: #f4f7fa; text-align: center;}
+#footer {width: 100%; min-width: 1043px; height: 230px;}
+
+
+
+/* Header */
+#header .top_btn {width: 250px; height: 30px; float: left; margin-left: 80px; margin-top: 10px;}
+#header .top_btn a {width: 120px; height: 30px; line-height: 30px; color: #fff; background: #00a0d9; border-radius: 15px; float: left; text-align: center; font-size: 15px; transition: .35s;}
+#header .top_btn a:nth-child(2) {background: #7c9ca8 ; margin-left: 10px;}
+
+#header .top_btn a:nth-child(1):hover {background: #0088b9; }
+#header .top_btn a:nth-child(2):hover {background: #6a8691 ;}
+
+#header .login {width: 300px; height: 45px;  line-height: 45px;  float: right; text-align: right; }
+#header .login a {font-size: 15px; padding: 0 15px; color: #777; position: relative; }
+#header .login a::after {content: ""; width: 2px; height: 2px; background: #777; position: absolute; left: 4px; top: 10px;}
+#header .login a:hover {text-decoration-line: underline; text-decoration-color: #777; }
+#header .login > img { float: right;}
+
+#header .logout {width: 275px; height: 45px; float: right; text-align: right; background: #7c9ca8; display: none;}
+#header .logout a {padding: 0 15px; color: #777; position: relative;}
+#header .logout a::after {content: ""; width: 2px; height: 2px; background: #777; position: absolute; left: 4px; top: 10px;}
+#header .logout a:hover {text-decoration-line: underline; text-decoration-color: #777; }
+
+#header h2 {width: 215px; height: 65px; position: absolute; left: 50%; top: 60px; transform: translateX(-50%); background:  url("../images/header-logo.png") no-repeat;}
+
+#header .gnb {width: 100%; float: left; margin-top: 68px; font-size: 0; text-align: center; }
+#header .gnb > li {height: 65px; line-height: 65px; display: inline-block; font-size: 18px; position: relative;}
+#header .gnb > li:hover > a {color:#00a0d9}
+#header .gnb > li > a {color: #222; display: block; padding: 0 30px; transition: .3s;}
+
+#header .gnb .lnb {position: absolute; width: 100%; z-index: 7; font-size: 0; margin-top: 10px; display: none;}
+#header .gnb .lnb li {display: block; height: 40px; line-height: 40px; font-size: 15px; text-align: center;}
+#header .gnb .lnb li a {display: block; color: #333; transition: .2s;}
+#header .gnb .lnb li:hover a {color: #00a0d9;}
+
+.lnb_bg {position: absolute; background: rgba(255,255,255,0.95); width: 100%; height: 210px; z-index: 5;  left: 0; top: 180px; box-shadow: 0 4px 6px rgb(226, 226, 226) inset; display: none;}
+
+
+/* Visual main */
+/* #visual_main .notice_box {width: 100%; min-width: 10433px; height: 60px; position: absolute; bottom: 0; background: #00a0d9;}
+.notice_box h2 {width: 132px; height: 32px; text-align: center; line-height: 32px; background: #fff; font-size: 16px; color: #0088b9; float: left; margin-top: 14px;}
+.notice_box .article {float: right; width: 870px; height: 32px; margin-top: 14px; border: 1px solid #fff; overflow: hidden;}
+.notice_box .article li {width: 100%; height: 32px; line-height: 32px;}
+.notice_box .article li a {color: #fff; } */
+
+
+/* section1 */
+.section1 h2 {text-align: left; display: block; height: 40px;  font-size: 25px; position: relative; text-indent: 13px; font-weight: normal;}
+.section1 h2::before {content: ""; width: 5px; height: 32px; position: absolute; left: 0; top: 0; background: #00a0d9;}
+
+.section1 h2 a {width: 22px; height: 22px; float: right; position: relative; margin: 7px; background: #fff; }
+.section1 h2 a::before,
+.section1 h2 a::after {content: ""; position: absolute; width: 22px; height: 2px; top: 10px; right: 0px; background: #00a0d9; transition: .3s;}
+.section1 h2 a::after {transform: rotate(90deg);}
+
+.section1 h2 a:hover::before { width: 15px; transform: rotate(-45deg); top: 15px; right: 3px;}
+.section1 h2 a:hover::after { width: 15px; transform: rotate(45deg); top: 5px; right: 3px;}
+
+
+.section1 div:nth-child(2) h2::before {background: #adce04;}
+.section1 div:nth-child(3) h2::before {background: #fbf001;}
+
+.section1 .center_box > div {display: inline-block; margin: 50px;  width: 270px; height: 280px;}
+.section1 ul li { border-bottom: 1px solid #d6d6d6; height: 45px; line-height: 45px; width: 100%;}
+.section1 ul li a p { font-size: 15px;  color: #555;  width: 190px; float: left;  text-align: left; }
+.section1 ul li a p:nth-child(2) {color: #bdbdbd; width: 80px;  font-size: 14px; float: right; text-align: right;}
+
+
+
+/* section2 */
+.section2 h1 {text-align: center; font-size: 40px; color: #fff; font-weight: normal; padding: 65px 0;}
+
+.section2 li {display: inline-block; width: 290px; height: 286px;  margin: 0 35px; position: relative;}
+
+.section2 li::before {content: ""; position: absolute; width: 290px; height: 286px; background: rgba(0,0,0,0.4); left: 0; z-index: 1; transition: .4s; opacity: 0; top: 0; cursor: pointer;}
+
+.section2 li:nth-child(2) {background: url("../images/bed1.png"); position: relative;}
+.section2 li:nth-child(3) {background: url("../images/bed2.png");}
+.section2 li:nth-child(4) {background: url("../images/bed3.png");}
+
+.section2 li a p {margin: 5px; text-align: left; color: #fff; z-index: 2 ; position: relative; transition: .4s; opacity: 0;}
+.section2 li a p:first-child {font-weight: bold;}
+.section2 li a p:last-child {text-align: right; position: absolute; bottom: 0px; right: 5px; }
+.section2 li a p:last-child::before {content: ""; width: 0px; height: 1px; transform: rotate(45deg); background: #fff; position: absolute; bottom: 32px; right: -2.5px; transition: .5s; opacity: 0;}
+.section2 li a p:last-child::after {content: ""; width: 0px; height: 1px; background: #fff; position: absolute; bottom: 25px; right: 0px; transition: 1s; opacity: 0;}
+
+.section2 li:hover a p { opacity: 1;}
+.section2 li:hover::before { opacity: 1;}
+.section2 li:hover a p:last-child::after {width: 150px; opacity: 1;}
+.section2 li:hover a p:last-child::before {width: 20px; opacity: 1;}
+
+
+/* section3 */
+.section3 .center_box div {display: inline-block; width: 450px; height: 150px; background: rgba(255,255,255,0.1); border: 4px solid rgba(255,255,255,0.5); margin: 70px 45px; box-sizing: border-box; vertical-align: top; transition: .4s;}
+.section3 .center_box a {display: block; height: 100%; position: relative;}
+.section3 .center_box div:nth-child(1) a figure {width: 55px; height: 50px; position: absolute; background: url("../images/menual.png") no-repeat; top: 10px; right: 50%; transform: translateX(50%);}
+.section3 .center_box div:nth-child(2) a figure {width: 55px; height: 50px; position: absolute; background: url("../images/a_s.png") no-repeat; top: 25px; right: 50%; transform: translateX(50%);}
+
+.section3 .center_box a p:nth-child(2) {padding-top: 60px; font-size: 30px; }
+.section3 .center_box div:nth-child(2) p {padding-top: 80px;}
+.section3 .center_box a p:nth-child(3) {padding-top: 10px; font-size: 12px; }
+.section3 .center_box a p span {display: inline-block; width: 1px; height: 13px; background: #222; margin: 0 3px;}
+
+.section3 .center_box div:hover {background: rgba(175, 166, 166, 0.1);}
+
+
+
+
+/* section4 */
+.section4 .center_box h1 {padding: 65px 0; font-size: 40px; color: #222; font-weight: normal;}
+.section4 .center_box div {display: inline-block; width: 250px; height: 520px; vertical-align: top; position: relative; }
+.section4 .center_box div.mid_box {width: 520px; height: 520px; margin: 0 20px;}
+
+.section4 .center_box div:nth-child(2) {background: url("../images/sec4_1.png"); transition: 2s; background-size:100%;}
+.section4 .center_box div:nth-child(3) {background: url("../images/sec4_2.png"); transition: 2s; background-size:100%;}
+.section4 .center_box div:nth-child(4) {background: url("../images/sec4_3.png"); transition: 2s; background-size:100%;}
+
+.section4 .center_box div:hover:nth-child(2) {background-size: 110%; background-position: center;}
+.section4 .center_box div:hover:nth-child(3) {background-size: 110%; background-position: center;}
+.section4 .center_box div:hover:nth-child(4) {background-size: 110%; background-position: center;}
+.section4 .center_box div:hover::after {background: rgba(0,0,0,0.6);}
+
+.section4 .center_box div::after {content: ""; height: 160px; width: 100%; position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.4); cursor: pointer; transition: .4s;}
+
+.section4 .center_box div a {display: block; width: 100%; height: 100%;}
+
+.section4 .center_box div h3 {color: #fff; font-weight: normal; font-size: 32px; text-align: left; top: 365px; left: 15px; position: absolute; z-index: 2; position: relative;}
+.section4 .center_box div h3::after {content: ""; width: 100px; height: 2px; position: absolute; top: 51px; left: 0px; background: #fff;}
+.section4 .center_box div p {color: #fff; text-align: left; position: absolute; top: 430px; left: 15px; z-index: 2;}
+.section4 .center_box div p:first-child {font-size: 32px;}
+
+
+
+/* footer */
+#footer .info {width: 100%; height: 90px; }
+#footer .info ul {float: left; width: 780px;}
+#footer .info ul li {display: inline-block; height: 90px;}
+#footer .info ul li a {display: block; font-size: 15px; line-height: 90px; padding: 0 10px;}
+#footer .info ul li:nth-child(3) a {color: #00a0d9; font-weight: bold;}
+#footer .info .sns {float: left; }
+
+#footer .info .sns {width: 100px; height: 80px; float: right;  border: 1px solid;}
+#footer .info .sns div { width: 25px; height: 25px; border-radius: 10px; border: 1px solid; float: left; }
+
+#footer .adress {width: 800px; height: 140px; float: left;}
+#footer .adress p {font-size: 13px; line-height: 25px;}
+#footer .adress i {font-size: 11px;}
+
+#footer .family {width: 160px; height: 35px; border: 2px solid #222; border-bottom: 0; float: right; margin-top: 10px;}
+#footer .family h4 {font-weight: normal; position: relative;padding: 7px 20px;}
+#footer .family h4:after {content: ""; width: 25px; height: 25px; position: absolute; background: url("../images/next.png") no-repeat 0 3px; right: 20px;}
+
+/* Demo styles */
+
+      .swiper {
+        width: 100%;
+        height: 650px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 20px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+      }
+
+      .swiper-pagination-bullet {width: 25px !important; background: #fff !important; border-radius: 5px !important; height: 4px !important;}
+      .swiper-button-next::after, 
+      .swiper-button-prev::after 
+      {color: rgba(255,255,255,0.9); box-shadow: (0, 2px, 2px #000) !important;}
+
+
+
