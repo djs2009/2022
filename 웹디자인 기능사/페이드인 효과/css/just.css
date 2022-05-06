@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color:#333;}
+
+body {font-family: "맑은고딕";}
+
+#visual {width: 1200px; height: 300px; margin: 0 auto; position: relative;}
+#visual .slide_box {}
+#visual .slide_box li {width: 100%; height: 300px; float: left; position: absolute;}
+
+.btn_box {position: absolute; width: 100%; top: 50%; transform: translateY(-50%); height: 50px;}
+.btn_box button {width: 50px; height: 50px; border: 0; background: #000; color: #fff; font-size: 20px; cursor: pointer; position: absolute;}
+.btn_box button.next {right: 0;}
+
+.pagenation {position: absolute; width: 100%; height: 15px; bottom: 30px; text-align: center;}
+.pagenation span { display: inline-block; width: 15px; height: 15px; border-radius: 50px; background: #555; cursor: pointer; font-size: 11px; color: #fff; transition: .2s; margin: 5px;}
+.pagenation span.on {width: 25px; background: #fff; color: #333;}

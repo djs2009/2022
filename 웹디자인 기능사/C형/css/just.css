@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; color: #333; text-decoration: none;}
+
+body {font-family: "맑은고딕"; }
+
+#wrap {width: 1000px;}
+#header {width: 240px; height: 650px; float: left; background-color: beige;}
+.contents {width: 760px; float: left;}
+
+#visual {width: 100%; height: 350px;}
+#section {width: 100%; height: 200px; background-color: bisque;}
+#footer {width: 100%; height: 100px; background: #444;}
+
+
+#header h1 {width: 200px; margin: 20px auto;}
+#header .gnb {width: 200px; margin: 20px auto; border:1px solid;}
+#header .gnb > li {width: 200px; line-height: 50px; text-align: center; border-bottom: 1px solid #777; font-weight: bold;}
+#header .gnb > li .lnb li {font-weight: normal;}
+
+#header .gnb > li.on > a {background-color: #333; color: #fff;}
+
+
+#header .gnb li a {display: block;}
+#header .gnb > li:hover > a {background: #333; color:#fff}
+
+#header .gnb .lnb li:hover a {background: #777; color:#fff}
+
+/* #header .gnb .lnb {height: 0; overflow: hidden; transition: .2s;}
+#header .gnb li:hover .lnb {height: 150px;} */
+#header .gnb .lnb {display: none;}
