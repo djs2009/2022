@@ -25,6 +25,7 @@
 #header .gnb {width:100%; height: 60px; font-size: 0; text-align: center; text-align: center; margin: 0 auto;} 
 #header .gnb > li {display: inline-block; height: 60px; line-height: 60px; font-size: 20px; vertical-align: top; position: relative;}
 #header .gnb > li > a {display: block; padding: 0 60px; font-weight: bold; color: #666;}
+#header .gnb > li:hover > a {color: #005aab;}
 
 #header .lnb {margin-top: -10px; visibility: hidden; opacity: 0; transition: .5s; position: absolute; width: 100%;}
 #header .lnb li {z-index: 10;}
@@ -73,10 +74,11 @@
 #section2 h2::before {content: ""; position: absolute; width: 60px; height: 65px; background: url("../images/font_deco.png") no-repeat; left: -20px; top: -10px;}
 #section2 ul {display: inline-block; width: 440px; height: 320px; margin: 0 30px;}
 #section2 ul li {width: 100%; height: 45px; border-bottom: 1px solid #c5c5c5; }
+#section2 ul li:hover p {background: #f5f5f5;}
 #section2 ul li:last-child {border-bottom: none;}
 #section2 ul li a {display: block; text-align: left; line-height: 45px;}
-#section2 ul li p { font-size: 15px; color: #222; height: 45px; line-height: 45px; float: left; width: 350px;}
-#section2 ul li p:nth-child(2) {color: #c5c5c5; float: right; width: 90px; }
+#section2 ul li p { font-size: 15px; color: #222; height: 45px; line-height: 45px; float: left; width: 350px; text-indent: 10px;}
+#section2 ul li p:nth-child(2) {color: #c5c5c5; float: right; width: 90px; text-indent: 0;}
 
 
 /* section3 */
@@ -84,7 +86,7 @@
 #section3 li {display: inline-block; vertical-align: top; width: 380px; height: 290px; text-align: center; ; cursor: pointer;}
 #section3 li:nth-child(2) { margin: 0 20px; ;}
 #section3 li figure {width: 100%;}
-#section3 li figure img {width: 100%;}
+#section3 li figure img {width: 100%; height: 250px;}
 #section3 li p {width: 100%; height: 65px; background: #085fae; color: #fff; font-size: 24px; line-height: 65px; text-align: left; text-indent: 15px; letter-spacing: -1px}
 
 #section3 li p span { font-size: 13px; position: relative; }
