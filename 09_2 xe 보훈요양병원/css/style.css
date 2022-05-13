@@ -106,7 +106,7 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 
 /*section_box*/
 .section1 {text-align: center; font-size: 0;}
-.section1 .center_box > div {width: 300px; height: 270px; display: inline-block; margin:54px 65px 0 0}
+.section1 .center_box > div {width: 300px; height: 270px; display: inline-block; margin:54px 65px 0 0; vertical-align: top;}
 .section1 .center_box > div:last-child {margin-right: 0;}
 
 .section1 .center_box > div h2 {width: 100%; height: 50px; font-size: 24px; color: #333; text-align: left;}
@@ -127,6 +127,7 @@ body {font-family: 'NanumBarunGothic', sans-serif; background: #f3f3f3;}
 .section1 .center_box > div li a {font-size: 16px; color: #333;}
 .section1 .center_box > div li a p {float: left; width: 210px;}
 .section1 .center_box > div li a p:last-child {color: #888; width: 80px; float: right; font-size: 15px;}
+.section1 .center_box > div li span.date {color: #888;  float: right; font-size: 15px;}
 
 
 .section2 {padding-top: 40px; position: relative;}
