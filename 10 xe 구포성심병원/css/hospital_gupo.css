@@ -12,9 +12,10 @@ body {font-family: '나눔바른고딕', 'NanumBarunGothic';}
 
 /* 헤더 */
 #header .topmenu {width: 1200px; height:48px; }
-#header .topmenu > a {display: inline-block; height: 48px; line-height: 48px; text-align: center; float: right; padding: 0 20px; font-size: 15px; color: #555; position: relative;}
-#header .topmenu > a:hover {text-decoration: underline; text-underline-position: under;}
-#header .topmenu > a::before {content: ""; position: absolute; width: 2px; height: 2px; background: #555; top: 48%; left: 5px;}
+#header .topmenu .login {width: 500px; height: 48px; float: right;}
+#header .topmenu .login a {display: inline-block; height: 48px; line-height: 48px; text-align: center; float: right; padding: 0 20px; font-size: 15px; color: #555; position: relative; }
+#header .topmenu .login a:hover {text-decoration: underline; text-underline-position: under;}
+#header .topmenu .login a::before {content: ""; position: absolute; width: 2px; height: 2px; background: #555; top: 48%; left: 5px;}
 
 #header .topmenu h3 {display: inline-block; height: 32px;  line-height: 35px; text-align: center; position: relative; border: 1px solid #888;  border-radius: 30px; top: 7px; padding: 0 30px 0 10px; }
 #header .topmenu h3::after {content: ""; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(45deg, #00afb6, #007abd); position: absolute; right: 7px; top: 7px;}
@@ -24,7 +25,7 @@ body {font-family: '나눔바른고딕', 'NanumBarunGothic';}
 
 
 #header .topset h1 {width: 190px; height: 65px; float: left; margin-top: 8px; background: url("../images/logo.png") no-repeat;}
-#header .topset h1 a {width: 190px; height: 65px; display: block;}
+#header .topset h1 a {width: 190px; height: 65px;  display: block;}
 #header .topset .gnb {width: 700px; height: 76px;  float: left; margin-left: 300px; text-align: center;  }
 #header .topset .gnb > li { float: left; font-size: 18px; color: #333;  height: 76px; line-height: 76px; box-sizing: border-box; position: relative; }
 #header .topset .gnb > li > a {padding: 17px 52px; line-height: 76px; }
@@ -389,3 +390,8 @@ input::placeholder {color: rgb(238, 238, 238);}
 .vision .vision_txt p { color: #555; font-size: 28px; line-height: 60px; border-bottom: 4px solid #007ac3;}
 .vision strong:hover ~ .vision_txt {margin: -5px auto;}
 .vision strong:hover {border: 0; width: 204px; height: 104px; line-height: 104px; background: linear-gradient(45deg, #006caa, #009fa5); color: #FFF;}
+
+
+
+#visual_sub {width: 100%; height: 300px; min-width: 1200px; background: url("../images/visual2.jpg") no-repeat center top;}
+.login_box {width: 1200px; height: 1200px; margin-top: 60px;}
