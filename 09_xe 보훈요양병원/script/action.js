@@ -17,14 +17,14 @@ $(document).ready(function(){
         $('.gnb .lnb a').each(function(){ //각각에 대해서
             var gnbHref = $(this).attr('href');//this에 있는 href속성
 
-            if(pageUrl.indexOf(gnbHref) >= 0){//gnbHref에 해당하는 글자가 있다면 // indexOf 는 자리 번호!
+            if(pageUrl.indexOf(gnbHref) >= 0){ // indexOf 는 자리 번호!
                 var gnbName = $(this).parents('.lnb').siblings('a').text(); //1차 메뉴 이름 불러오기
                 $('.visual_text p').text(gnbName);
 
                 var lnbName = $(this).text(); //2차 메뉴 이름 불러오기
                 $('.content_container h2').text(lnbName);
                 
-                var lnbHtml = $(this).parents('.lnb').html(); //2차메뉴 소스 불러오기
+                var lnbHtml = $(this).parents('.lnb').html(); //2차메뉴 소스 불러오기;
                 $('.snb').html(lnbHtml);
 
                 var gnbIndex = $(this).parents('.lnb').parent().index(); //내가 클릭한 조상의 부모의 번호

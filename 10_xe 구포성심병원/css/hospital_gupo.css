@@ -11,8 +11,8 @@ body {font-family: '나눔바른고딕', 'NanumBarunGothic';}
 
 
 /* 헤더 */
-#header .topmenu {width: 1200px; height:48px; }
-#header .topmenu .login {width: 500px; height: 48px; float: right;}
+#header .topmenu {width: 1400px; height:48px; }
+#header .topmenu .login {width: 500px; height: 48px; float: right; }
 #header .topmenu .login a {display: inline-block; height: 48px; line-height: 48px; text-align: center; float: right; padding: 0 20px; font-size: 15px; color: #555; position: relative; }
 #header .topmenu .login a:hover {text-decoration: underline; text-underline-position: under;}
 #header .topmenu .login a::before {content: ""; position: absolute; width: 2px; height: 2px; background: #555; top: 48%; left: 5px;}
@@ -26,11 +26,14 @@ body {font-family: '나눔바른고딕', 'NanumBarunGothic';}
 
 #header .topset h1 {width: 190px; height: 65px; float: left; margin-top: 8px; background: url("../images/logo.png") no-repeat;}
 #header .topset h1 a {width: 190px; height: 65px;  display: block;}
-#header .topset .gnb {width: 700px; height: 76px;  float: left; margin-left: 300px; text-align: center;  }
+#header .topset .gnb {width: 700px; height: 76px;  float: left; text-align: center;  float: right; }
 #header .topset .gnb > li { float: left; font-size: 18px; color: #333;  height: 76px; line-height: 76px; box-sizing: border-box; position: relative; }
 #header .topset .gnb > li > a {padding: 17px 52px; line-height: 76px; }
+
+/* gnb효과 */
 #header .topset .gnb > li > a::after {content: ""; width: 100px; height: 7px; background: #007ac3; position: absolute; bottom: -7px; right: 50%; transform: translateX(50%); transition: .3s; opacity: 0; }
-#header .topset .gnb > li:hover > a::after {display: block; opacity: 1; bottom: 0;}
+#header .topset .gnb > li > a.gnb_up::after {content: ""; width: 100px; height: 7px; background: #007ac3; position: absolute; bottom: 0px; right: 50%; transform: translateX(50%); transition: .3s; opacity: 1; }
+#header .topset .gnb > li:hover > a::after { opacity: 1; bottom: 0;}
 
 
 
@@ -301,7 +304,8 @@ input::placeholder {color: rgb(238, 238, 238);}
 
  .swiper-pagination-bullet {width: 30px !important; background: #fff !important; border-radius: 5px !important; height: 5px !important;}
 
-
+ .swiper-button-prev { margin-left: 5%;}
+ .swiper-button-next {margin-right: 5%}
 
 
  /* --------서브페이지---------- */
@@ -315,14 +319,15 @@ input::placeholder {color: rgb(238, 238, 238);}
 #visual04_01 .intro p:first-child::after {content: ""; width: 155px; height: 1px; background: #fff; position: absolute; left: 35px; top: 130px;}
 #visual04_01 .intro p:last-child {font-size: 23px; word-break: keep-all; line-height: 35px;}
 
-#section_sub {width: 1200px; margin: 0 auto ; text-align: center; }
+#section_sub {width: 1200px; margin: 0 auto ; text-align: center; font-size: 0;}
 #section_sub .snb {text-align: center; font-size: 0; position: relative; display: inline-block;}
 #section_sub .snb li {display: inline-block; width: 200px; height: 60px; line-height: 60px; border:1px solid #cbcbcb; font-size: 18px; border-right: 0; box-sizing: border-box; vertical-align: top; transition: .2s;}
 #section_sub .snb li:last-child {border-right: 1px solid #cbcbcb;}
-#section_sub .snb li a {color: #777; display: block;}
+#section_sub .snb li a { display: block;}
 #section_sub .snb li:hover:not(.on_sub)
-{background:#f0f0f0;}
-#section_sub .snb .on_sub a {background: #007ac3; color: #fff;}
+{background:#f0f0f0; color: #777;}
+
+.on_sub a {background: #007ac3; color: #fff;}
 
 
 /* 병원정보 */
