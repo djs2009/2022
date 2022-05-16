@@ -17,7 +17,7 @@ $(document).ready(function(){
         $('.gnb .lnb a').each(function(){ //각각에 대해서
             var gnbHref = $(this).attr('href');//this에 있는 href속성
 
-            if(pageUrl.indexOf(gnbHref) >= 0){ // indexOf 는 자리 번호!
+            if(pageUrl.indexOf(gnbHref) >= 0){ // 
                 var gnbName = $(this).parents('.lnb').siblings('a').text(); //1차 메뉴 이름 불러오기
                 $('.visual_text p').text(gnbName);
 
