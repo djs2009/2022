@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('reset.css');
+@import url('font.css');
+
+html {font-size: 16px;}
+body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; 
+    background: #f3f3f3;}
+
+
+/* latouts */
+#header_j {width: 1200px; height: 150px; position: absolute; left: 50%; transform: translateX(-50%);}
+#visual_main {width: 100%; height: 770px; background: url("../images/visual_main.jpg") center top;}
+#section_wrap {}
+#footer_j {}
+
+/* header */
+#header_j h1 {width: 200px; height: 150px; float: left; margin-top: 38px;}
+#header_j h1 img {width: 100%}
+
+#header_j .topmenu {width: 300px; height: 22px; float: right; margin-top: 29px; text-align: right; font-size: 0; line-height: 22px;}
+#header_j .topmenu a { padding: 0 12px; color: #fff; display: inline-block; height: 22px; vertical-align: top; font-size: 16px;}
+#header_j .topmenu a:nth-of-type(1) {background: #f87b82; border-radius: 20px 0 0 20px; padding: 0 12px 0 20px; line-height: 22px;}
+#header_j .topmenu a:nth-of-type(2) {background: #ec67a5; line-height: 20px;}
+#header_j .topmenu a:nth-of-type(3) {background: #d663b8; border-radius: 0 20px 20px 0; padding: 0 20px 0 12px; line-height: 22px;}
+
+#header_j .gnb {float: right; width: 800px; height: 50px; margin-top: 49px; font-size: 0; text-align: right;}
+#header_j .gnb > li {display: inline-block; font-size: 20px; height: 50px; line-height: 50px; margin-left: 50px; position: relative;}
+#header_j .gnb > li > a {display: block;}
+
+#header_j .gnb > li::before,
+#header_j .gnb > li::after {content: ""; position: absolute; transition: .2s;}
+#header_j .gnb > li::before {content: url('../images/gnb_point.png'); position: absolute; left: -12px;top: -20px; opacity: 0;}
+#header_j .gnb > li::after {width: 0px; height: 1px; background: #ec67a5; bottom: 10px; right: 0px;}
+
+#header_j .gnb > li:hover::before {opacity: 1; top: -15px;}
+#header_j .gnb > li:hover::after {width: 30px;}
+
+#header_j .gnb > li:hover .lnb_box {opacity: 1; visibility: visible; margin-left: 0; transform: translateX(-50%) rotate(0);}
+
+.lnb_box {width: 480px; height: 290px; left: 50%; border: 1px solid; position: absolute;transform: translateX(-50%) rotate(10deg); opacity: 0; visibility: hidden; transition: .8s; margin-left: 200px; margin-top: 20px;}
+.lnb_box .circle1 {width: 9px; height: 9px; background: #ff4b59; border-radius: 50%; position: absolute; left: 50%; transform: translateX(-50%);}
+.lnb_box .circle2 {width: 15px; height: 15px; background: #e90673; border-radius: 50% 50% 0 0; position: absolute; left: 50%; top: 15px; transform: translateX(-50%);}
+.lnb_box .circle2 i {width: 45px; height: 15px; position: absolute; background: #e90673; left: -15px; top: 7px;}
+.lnb_box .circle2 i::before,
+.lnb_box .circle2 i::after {content: ""; position: absolute; background: #eee; width: 16px; height: 8px; top: 0; }
+.lnb_box .circle2 i::before {left: -1px; border-radius: 0 0 100px 0;}
+.lnb_box .circle2 i::after {right: -1px; border-radius: 0 0 0 100px;}
+
+.lnb_box .lnb_bg {width: 480px; height: 210px; background: #e90673; border-radius: 150px; position: absolute; top: 30px; perspective: 1200px; z-index: 2; box-shadow: 10px 10px 10px rgba(0,0,0,0.2);}
+.lnb_box .lnb_bg::before {content: ""; position: absolute; width: 100px; height: 50px;  right: 0; top: 40px; background: linear-gradient(45deg, #e90b73 40%, #fa7d81); border-radius: 50px 10px 30px 0; transform: skewX(-30deg); box-shadow: 0 -10px 10px rgba(0,0,0,0.2); animation: wing .5s infinite alternate; transform-origin: bottom;}
+/* 무한  왔다갔다 */
+@keyframes wing {
+    0% {transform: rotate(0);}
+    100% {transform: rotateX(70deg);}
+}
+
+.lnb_box .tire_box {position: absolute; border: 1px solid; bottom:100px; width: 100%;  background: #000;}
+.lnb_box .tire_box .tire1 {position: absolute; width: 60px; height: 60px; border-radius: 50%; border: 14px solid #ff8184; left: 100px; animation: tire1 3s infinite linear;}
+@keyframes tire1 {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+.lnb_box .tire_box .tire1 span {position: absolute; width: 14px; height: 2px; background: rgba(255,255,255,0.5); left:50%; top:50%; margin-left:-7px; margin-top: -1px; transform:rotate(calc(45deg * var(--index))) translateX(37px);}
+
+.lnb_box .tire_box .tire2 {position: absolute; width: 60px; height: 60px; border-radius: 50%; border:14px solid #f44dc2; right: 100px; animation: tire1 3s infinite linear;}
+.lnb_box .tire_box .tire2 span {position: absolute; width: 14px; height: 2px; background: rgba(255,255,255,0.5); left:50%; top:50%; margin-left:-7px; margin-top: -1px; }
