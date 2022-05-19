@@ -9,7 +9,9 @@ $(document).ready(function(){
 
         if(pageUrl.indexOf(lnbHref) >= 0){
           var lnbName = $(this).text();
+          $('.sub_intro p').text(lnbName);
           $('.intro p:first-child').text(lnbName);
+          
           
           var lnbHtml = $(this).parents('.lnb').html();
           $('.snb').html(lnbHtml);
@@ -23,10 +25,11 @@ $(document).ready(function(){
         var snbHref = $(this).attr('href');
 
         if(pageUrl.indexOf(snbHref) >= 0){
-          $(this).parent('li').addClass('on_sub');
+          $(this).parent('li').addClass('on_sub').sibling().removeClass('on_sub');
         }
       })
     }
+    
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
         centeredSlides: true,
