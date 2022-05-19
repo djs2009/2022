@@ -141,12 +141,12 @@ body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Ro
 
 
 /* today */
-#today {width: 100px; height: 400px; position: absolute; left: 50%; margin-left: 650px; top: 400px;}
+#today {width: 100px; height: 400px; position: absolute; left: 50%; margin-left: 650px; top: 400px; z-index: 7;}
 #today ul {width: 100%; padding: 15px 0; border-radius: 50px; background: #fa7c80;}
 #today ul li {width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 10px auto; overflow: hidden;}
 #today ul li:last-child {margin: 0 auto;}
 
-#today a.go_top {width: 58px; height: 24px; border-radius: 20px; background: #fa7c80 url("../images/today_up.png") no-repeat 10px center; position: relative; display: block; margin: 12px auto 3px auto; color: #fff; text-align: center; line-height: 24px; font-size: 14px; text-indent: 8px; }
+#today a.go_top {width: 58px; height: 24px; border-radius: 20px; background: #fa7c80 url('../images/today_img02.png') no-repeat 10px center; position: relative; display: block; margin: 12px auto 3px auto; color: #fff;; text-align: center; line-height: 24px; font-size: 14px; text-indent: 8px;}
 #today a.go_top::before {content: url("../images/today_bar.png"); position: absolute; z-index: -1; left: -12px; top: 13px; }
 
 

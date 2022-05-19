@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //시작수, 범위수, 증가수
-    $('tire2').each(function(){
+    $('.tire2').each(function(){
         for(i=1; i<9; i++){
             $(this).append('<span></span>');
             $(this).find('span').eq(i-1).css({Transform:'rotate('+(45*i)+'deg) translateX(37px)'})
