@@ -22,11 +22,25 @@ body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Ro
 #header_j h1 {width: 200px; height: 150px; float: left; margin-top: 38px;}
 #header_j h1 img {width: 100%}
 
-#header_j .topmenu {width: 300px; height: 22px; float: right; margin-top: 29px; text-align: right; font-size: 0; line-height: 22px;}
+#header_j .topmenu {width: 400px; height: 22px; float: right; margin-top: 29px; text-align: right; font-size: 0; line-height: 22px;}
 #header_j .topmenu a { padding: 0 12px; color: #fff; display: inline-block; height: 22px; vertical-align: top; font-size: 16px;}
 #header_j .topmenu a:nth-of-type(1) {background: #f87b82; border-radius: 20px 0 0 20px; padding: 0 12px 0 20px; line-height: 22px;}
 #header_j .topmenu a:nth-of-type(2) {background: #ec67a5; line-height: 20px;}
 #header_j .topmenu a:nth-of-type(3) {background: #d663b8; border-radius: 0 20px 20px 0; padding: 0 20px 0 12px; line-height: 22px;}
+
+#header_j .topmenu button {margin-right: 10px; cursor: pointer;}
+
+.modal {position: fixed; width: 100%; height: 100vh; background: rgba(0,0,0,0.8); z-index: 10; display: none;}
+.modal button {position: absolute; width: 80px; height: 80px; top: 130px; left: 50%; margin-left: 320px; background: none;}
+.modal button::before,
+.modal button::after {content: ""; position: absolute; width: 60px; height: 1px; background: #fff;}
+.modal button::before {transform: rotate(-45deg);}
+.modal button::after {transform: rotate(45deg);}
+
+.modal iframe {width: 800px; height: 500px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+
+
+
 
 #header_j .gnb {float: right; width: 800px; height: 50px; margin-top: 49px; font-size: 0; text-align: right;}
 #header_j .gnb > li {display: inline-block; font-size: 20px; height: 50px; line-height: 50px; margin-left: 50px; position: relative;}
@@ -64,6 +78,27 @@ body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Ro
     0% {transform: rotate(0);}
     100% {transform: rotateX(70deg);}
 }
+
+.gnb > li .lnb_bg span {position: absolute; bottom: -42px; width: 42px; height: 42px; }
+
+.gnb > li:hover .lnb_bg span {animation: bubbleup 5s infinite;}
+@keyframes bubbleup {
+    0% {bottom: -42px;}
+    100% {bottom: 200%;}
+}
+
+
+.gnb > li:hover .lnb_bg span:nth-child(1) {transform: scale(0.4); left: 60px; animation-delay: .6s;}
+.gnb > li:hover .lnb_bg span:nth-child(2) {transform: scale(1); left: 80px; animation-delay: 2s;}
+.gnb > li:hover .lnb_bg span:nth-child(3) {transform: scale(0.7); left: 150px; animation-delay: 2.8s;}
+.gnb > li:hover .lnb_bg span:nth-child(4) {transform: scale(0.5); left: 200px;  animation-delay: 0.3s;}
+.gnb > li:hover .lnb_bg span:nth-child(5) {transform: scale(0.2); left: 230px; animation-delay: 3.5s;}
+.gnb > li:hover .lnb_bg span:nth-child(6) {transform: scale(0.8); left: 300px; animation-delay: 1s;}
+
+
+
+
+
 
 .lnb_box .tire_box {position: absolute; width: 100%; }
 .lnb_box .tire_box .tire1 {position: absolute; width: 60px; height: 60px; border-radius: 50%; border: 14px solid #ff8184; left: 100px; animation: tire1 3s infinite linear;}

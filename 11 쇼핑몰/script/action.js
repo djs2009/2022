@@ -8,7 +8,7 @@ $(document).ready(function(){
     })
 
 
-$('.gnb li').mouseover(function(){
+$('.gnb > li').mouseenter(function(){
     var dtTotalH = 0
     $(this).find('dl').each(function(){
         /* dt 각각의 높이를 다 더한것 */
@@ -26,14 +26,30 @@ $('.gnb li').mouseover(function(){
         $(this).toggleClass('on')
     });
 
-    var todayTop = parseInt($('#today').css('top'));//안에 두면 계속 변하는 값이 됨
+    var todayTop = parseInt($('#today').css('top'));//안에 두면 계속 변하는 값이 됨  //400
     $(window).scroll(function(){
         var scrT = $(this).scrollTop();
         var winH = $(this).height();
         var winW = $(this).width();
-        var docW = $(document).height();
+        var docH = $(document).height();
+        var sec5H = $('#section5').outerHeight(true);
+        var footer5H = $('#footer_j').outerHeight(true);
+        var todayH = $('#today').height();
+
+
+        // $('#today').stop().animate({top:scrT+todayTop},1000)
+        if(scrT >= todayTop-100 && scrT < docH-(sec5H+footer5H+todayH+100)){  //400-100
+            $('#today').css({position:'fixed', top:'100px'})
+        } 
         
-        $('#today').stop().animate({top:scrT+todayTop})
+        else if (scrT >= docH-(sec5H+footer5H+todayH+100)){
+            $('#today').css({position:'absolute', top:docH-(sec5H+footer5H+todayH)})
+        } 
+
+        else {
+            $('#today').css({position:'', top:''})
+        }
+
 
         $('#today .go_top').click(function(){
             $('html').stop().animate({scrollTop:0})
@@ -50,7 +66,7 @@ $('.gnb li').mouseover(function(){
             }
         })
 
-        $('.scroll_bar').css({width:(scrT*winW) / docW});
+        $('.scroll_bar').css({width:(scrT*winW) / (docW - winH)});
     })
 
     //이미지 롤링
@@ -76,7 +92,7 @@ $('.gnb li').mouseover(function(){
         
     })
 
-    $('.small_img li').mouseover(function(){
+    $('.small_img li').mouseleave(function(){
         autoRolling = setInterval(rollingImg, delayTime)
     })
 
@@ -86,6 +102,21 @@ $('.gnb li').mouseover(function(){
         $('.big_img img').attr('src', imgSrc);
         $('.small_img li').eq(imgIndex).addClass('on').siblings().removeClass('on');
     }
+
+
+    $('.topmenu .youtube').click(function(){
+        $('.modal').fadeIn(200)
+        // $('.modal iframe').attr('src','https://www.youtube.com/embed/yZzWSwdkspk')
+        $('#player')[0].contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*')
+    })
+    $('.close').click(function(){
+        $('.modal').fadeOut(200)
+        // $('.modal iframe').attr('src','')
+        $('#player')[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*')
+    })
+
+    
+   
 
 })
 
