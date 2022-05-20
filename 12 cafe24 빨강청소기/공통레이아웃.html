@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; text-decoration: none; color: #333;}
+
+        body {font-family: '나눔스퀘어'; overflow-x: hidden; background: #f0f0f0;}
+        #wrap_km {width: 100%; position: relative; border-bottom: 1px solid #999;}
+        #wrap_km.km:before,
+        #wrap_km.km:after {content: ""; position: absolute; width: 100px; height: 100px; background: #f40103; transform: rotate(45deg);}
+        #wrap_km.km:before {top: -50px; right:-50px;}
+        #wrap_km.km:after {bottom:-50px; left:-50px}
+
+        #header_km {width: 1200px; height: 150px; margin:0 auto}
+        #header_km h1 {width: 240px; height: 150px; float: left;}
+        #header_km .topmenu {width: 200px; height: 18px; float:right; margin-top: 26px; background-color: bisque;}
+        #header_km .gnb_km {width: 800px; height: 47px; float: right; margin-top: 59px; }
+
+
+        #visual_main_km {width: 1200px; height: 580px; margin:0 auto; position: relative;}
+        #visual_main_km .text_box {width: 820px; height: 250px; position: absolute; top:160px; }
+        #visual_main_km .text_box .big {font-family: '나눔고딕'; font-size: 80px; font-weight: 100; text-transform: uppercase; line-height: 70px;}
+        #visual_main_km .text_box .small {font-family: '나눔스퀘어'; font-size: 20px; line-height: 90px;}
+        #visual_main_km .img_box {width: 460px; height: 460px; float: right; margin-top: 60px; }
+
+
+        #visual_sub_km {width: 1200px; height: 200px; margin:0 auto; position: relative;}
+        #visual_sub_km .text_box {width: 340px; height: 80px; position: absolute; top:60px; left:50%; transform: translateX(-50%); }
+        #visual_sub_km .text_box .big {font-family: '나눔고딕'; font-size: 30px; font-weight: 100; text-transform: uppercase; line-height: 40px; text-align: center;}
+        #visual_sub_km .text_box .big span {font-weight: normal;}
+        #visual_sub_km .img_box {width: 220px; height: 220px; float: right; margin-top: 15px; margin-right: 65px; }
+        #visual_sub_km .img_box img {height: 100%;}
+    </style>
+</head>
+<body>
+    <div id="wrap_km">
+        <div id="header_km">
+            <h1><a href="#"><img src="km/images/logo.png" alt=""></a></h1>
+            <div class="topmenu"></div>
+            <div class="gnb_km"></div>
+        </div>
+        <div id="visual_sub_km">
+            <div class="main_box">
+                <div class="text_box">
+                    <div class="big"><span>cleaner</span> - FAMILY’s
+                        QUALITY OF LIFE</div>
+                </div>
+                <div class="img_box">
+                    <img src="km/images/main_img01_06.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
