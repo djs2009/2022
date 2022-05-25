@@ -66,7 +66,7 @@ body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Ro
 .lnb_box .circle2 i::before {left: -1px; border-radius: 0 0 100px 0;}
 .lnb_box .circle2 i::after {right: -1px; border-radius: 0 0 0 100px;}
 
-.lnb_box .lnb_bg {width: 480px; height: 210px; background: #e90673; border-radius: 150px; position: absolute; top: 30px; perspective: 1200px; z-index: 2; box-shadow: 10px 10px 10px rgba(0,0,0,0.2); animation: updown 0.3s infinite alternate ease-out; }
+.lnb_box .lnb_bg {width: 480px; height: 210px; background: #e90673; border-radius: 150px; position: absolute; top: 30px; perspective: 1200px; z-index: 2; box-shadow: 10px 10px 10px rgba(0,0,0,0.2); animation: updown 0.3s infinite alternate ease-out; overflow: hidden;}
 @keyframes updown {
      0% {top: 25px;}
      100% {top:30px;}
@@ -94,8 +94,6 @@ body {font-family:  Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Ro
 .gnb > li:hover .lnb_bg span:nth-child(4) {transform: scale(0.5); left: 200px;  animation-delay: 0.3s;}
 .gnb > li:hover .lnb_bg span:nth-child(5) {transform: scale(0.2); left: 230px; animation-delay: 3.5s;}
 .gnb > li:hover .lnb_bg span:nth-child(6) {transform: scale(0.8); left: 300px; animation-delay: 1s;}
-
-
 
 
 
