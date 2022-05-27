@@ -1,9 +1,9 @@
 $(document).ready(function(){
    $('.gnb li').mouseover(function(){
-       $(this).find('.lnb').stop().slideDown(300);
+       $(this).find('.lnb').stop().fadeIn(200);
    });
    $('.gnb li').mouseout(function(){
-       $('.lnb').stop().slideUp(300);
+       $('.lnb').stop().fadeOut(200);
    });
 
 
@@ -12,13 +12,13 @@ $(document).ready(function(){
     });
 
     $('.title_box h2').mouseover(function(){
-        $('.title_box i a').show(300);
+        $('.title_box h2 a').stop().show(300);
     }); 
 
     $('.title_box h2').mouseleave(function(){
-        $('.title_box i a').hide(300);
+        $('.title_box h2 a').stop().hide(300);
     });
-    //a에 닿아도 a가 안사라지도록,,,
+    
 
 
 
