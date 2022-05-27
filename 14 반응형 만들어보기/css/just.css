@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; color: #333; text-decoration: none;}
+
+body {font-family: "맑은고딕"; }
+
+
+
+
+
+/*pc*/
+@media screen and (min-width:900px){
+#wrap {width: 1200px; height: 700px; margin: 0 auto; }
+#header {width: 100%; height: 100px; position: relative;}
+#visual {width: 100%; height: 300px; overflow: hidden;}
+#section {width: 100%; height: 200px; }
+#footer {width: 100%; height: 100px; background: #333;}
+
+
+#header h1 {width: 200px; height: 40px; float: left; margin-top: 30px;}
+#header .gnb {width: 600px; height: 100px; float: right;  }
+#header .gnb li {width: 150px; height: 100px; line-height: 100px; float: left;   text-align: center; font-size: 20px; position: relative;}
+#header .gnb li a {display: block;}
+
+#header .gnb li:hover {background: #aa64cf;}
+#header .gnb > li:hover > a {color: #fff;}
+
+#header .gnb .lnb {position: absolute; width: 100%; 
+    transition: .3s; opacity: 0; visibility: hidden; /* height: 0; overflow: hidden; */ z-index: 2;}
+#header .gnb .lnb li {height: 50px; line-height: 50px; }
+#header .gnb .lnb li:hover a {color: #fff;}
+
+#header .gnb:hover .lnb {opacity: 1; visibility: visible;}
+#header .gnb:hover li .lnb {height: 200px;}
+
+#header .lnb_bg {width: 100%; height: 200px; /* height: 0px;  */transition: .3s; position: absolute; background: #c493de; top:100px; opacity: 0; visibility: hidden; z-index: 1;}
+/* #header .gnb:hover ~ .lnb_bg {height: 200px;} */
+
+#header .gnb:hover ~ .lnb_bg {opacity: 1; visibility: visible;}
+
+
+
+
+
+
+/*슬라이드 효과 왼쪽으로*/
+/* #visual .slide_box {width: 4800px; }
+#visual .slide_box li {float: left; width: 1200px; height: 300px;} */
+/* 
+@keyframes slide_left {
+    0% {margin-left: 0;}
+    22% {margin-left: 0;}
+
+    33% {margin-left: -1200px;}
+    55% {margin-left: -1200px;}
+
+    66% {margin-left: -2400px;}
+    88% {margin-left: -2400px;}
+
+    100% {margin-left: -3600px;}
+} */
+
+/*슬라이드 효과 위로*/
+/* #visual .slide_box {width: 1200px; animation: slide_top 9s infinite linear;}
+#visual .slide_box li {float: left; width: 1200px; height: 300px;}
+
+@keyframes slide_top {
+    0% {margin-top: 0;}
+    22% {margin-top: 0;}
+
+    33% {margin-top: -300px;}
+    55% {margin-top: -300px;}
+
+    66% {margin-top: -600px;}
+    88% {margin-top: -600px;}
+
+    100% {margin-top: -900px;}
+} */
+
+
+/* fade 효과 */
+#visual .fade_box {width: 1200px;}
+#visual .fade_box li {width: 1200px; height: 300px; position: absolute; animation:fade 9s infinite; opacity: 0;}
+@keyframes fade {
+    0% {opacity: 0;}
+    11% {opacity: 1;}
+    33% {opacity: 1;}
+    44% {opacity: 0;}
+    100% {opacity: 0;}
+}
+#visual .fade_box li:nth-child(2) {animation-delay: 3s;}
+#visual .fade_box li:nth-child(3) {animation-delay: 6s;}
+
+
+
+
+
+
+
+#section > div {width: 400px; height: 200px; float: left; position: relative;}
+
+#section > div .news {position: absolute; width: 100%; top: 50px;}
+#section > div .gallery {position: absolute; width: 100%; top: 50px;}
+
+#section > div .news h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: center; margin-top: -50px;}
+#section > div .news h2 a {color:#999}
+#section > div .news h2.on a {color:#333}
+#section > div .news ul {text-align: center;}
+#section > div .news ul li {width: 350px; height: 30px; line-height: 30px; background: #ddd; display: inline-block;}
+#section > div .news ul li a {float: left; width: 280px; text-align: left;}
+#section > div .news ul li span {float: left; width: 70px;}
+
+
+#section > div .gallery h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: center; margin-left: 100px; margin-top: -50px;}
+#section > div .gallery h2 a {color: #999;}
+#section > div .gallery h2.on a {color: #333}
+#section > div .gallery ul {text-align: center; display: none;}
+#section > div .gallery ul li {display: inline-block; margin: 0 5px; width: 100px; height: 100px; background: #ddd;}
+#section > div .gallery ul li img {width: 100%;}
+
+
+
+
+#section > div.banner_box h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: center;}
+#section > div.banner_box ul {text-align: center;}
+#section > div.banner_box ul li {display: inline-block; margin: 0 5px; width: 100px; height: 100px; background: #ddd;}
+#section > div.banner_box ul li img {width: 100%;}
+
+#section > div.baro_box h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: center;}
+#section > div.baro_box ul {text-align: center;}
+#section > div.baro_box ul li {display: inline-block; margin: 0 5px; width: 80px; height: 100px; background: #ddd;}
+
+
+
+#footer h1 {width: 200px; height: 40px; float: left; margin-top: 30px; margin-left: 30px;}
+#footer .copy {width: 600px; height: 60px; float: left; margin-left: 50px; margin-top: 20px; color: #aaa;}
+#footer .sns_box {width: 200px; height: 40px; float: right; margin-top: 30px; }
+#footer .sns_box a {display: inline-block; width:40px; height:40px; border-radius: 50%; overflow: hidden; background: #000;;}
+
+
+#popup {width: 300px; height: 400px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); background: #aa64cf; z-index: 7; font-size: 22px; display: none;}
+#popup button {font-size: 18px; position: absolute; right: 20px; bottom:20px; background: #333; color: #fff; padding: 10px 20px; border:0; cursor: pointer; }
+
+
+.mo {display: none;}
+.pc {display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile*/
+
+.mo {display: block;}
+.pc {display: none;}
+
+@media screen and (max-width:899px){
+#wrap {width: 100%; margin: 0 auto; }
+#header {width: 100%; height: 83px; padding-top: 20px; box-sizing: border-box; position: relative;}
+#visual {width: 100%; overflow: hidden;}
+#section {width: 100%; padding:0 16px; box-sizing: border-box;}
+#footer {width: 100%; height: auto; background: #333; margin-top: 30px; padding: 30px 16px 10px 16px; box-sizing: border-box;}
+
+
+#header h1 {width: 200px; height: 40px; float: none; margin: 0 auto;}
+#header .gnb {width: 100%; height: 100px; float: right; display: none;}
+#header .gnb li {width: 150px; height: 100px; line-height: 100px; float: left; text-align: center; font-size: 20px; position: relative;}
+#header .gnb li a {display: block;}
+
+#header .gnb li:hover {background: #aa64cf;}
+#header .gnb > li:hover > a {color: #fff;}
+
+#header .gnb .lnb {position: absolute; width: 100%; 
+    transition: .3s; opacity: 0; visibility: hidden; /* height: 0; overflow: hidden; */ z-index: 2;}
+#header .gnb .lnb li {height: 50px; line-height: 50px; }
+#header .gnb .lnb li:hover a {color: #fff;}
+
+#header .gnb:hover .lnb {opacity: 1; visibility: visible;}
+#header .gnb:hover li .lnb {height: 200px;}
+
+#header .lnb_bg {width: 100%; height: 200px; /* height: 0px;  */transition: .3s; position: absolute; background: #c493de; top:100px; opacity: 0; visibility: hidden; z-index: 1;}
+/* #header .gnb:hover ~ .lnb_bg {height: 200px;} */
+
+#header .gnb:hover ~ .lnb_bg {opacity: 1; visibility: visible;}
+
+
+
+
+/* fade 효과 */
+#visual .fade_box {width: 100%; position: relative;}
+#visual .fade_box li {width: 100%; animation:fade 9s infinite; opacity: 0;}
+@keyframes fade {
+    0% {opacity: 0;}
+    11% {opacity: 1;}
+    33% {opacity: 1;}
+    44% {opacity: 0;}
+    100% {opacity: 0;}
+}
+#visual .fade_box li:nth-child(2) {animation-delay: 3s; position: absolute; top:0%}
+#visual .fade_box li:nth-child(3) {animation-delay: 6s; position: absolute; top:0%}
+#visual .fade_box li img {width: 100%;}
+
+
+
+
+
+
+#section > div {width: 100%; height: auto; float: none; position: relative; }
+
+#section > div .news {position: relative; width: 100%; top: 0; }
+#section > div .gallery {position: relative; width: 100%; top: 0;}
+
+#section > div .news h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: left; margin-top: 0px;}
+#section > div .news h2 a {color:#999}
+#section > div .news h2.on a {color:#333}
+#section > div .news ul {text-align: center;}
+#section > div .news ul li {width: 100%; height: 30px; line-height: 30px; background: #ddd; display: inline-block;}
+#section > div .news ul li a {float: left; width: 80%; text-align: left; }
+#section > div .news ul li span {float: right; width: 20%; }
+
+
+#section > div .gallery h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: left; margin-left: 0; margin-top: 0px;}
+#section > div .gallery h2 a {color: #333;}
+#section > div .gallery h2.on a {color: #333}
+#section > div .gallery ul {text-align: center; display: block; }
+#section > div .gallery ul li {display: inline-block; margin: 0 5px; width: 100px; background: #ddd; font-size: 0;}
+#section > div .gallery ul li img {width: 100%;}
+
+
+
+#section > div.banner_box h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: left;}
+#section > div.banner_box ul {text-align: center;}
+#section > div.banner_box ul li {display: inline-block; margin: 0 5px; width: 100px; background: #ddd;}
+#section > div.banner_box ul li img {width: 100%; vertical-align: top;}
+
+#section > div.baro_box h2 {width: 100px; height: 50px; line-height: 50px; font-size: 20px; text-align: left;}
+#section > div.baro_box ul {text-align: center;}
+#section > div.baro_box ul li {display: inline-block; margin: 0 5px; width: 80px; height: 100px; background: #ddd; }
+
+
+
+#footer h1 {width: 200px; height: 40px; float: none; margin:0 auto}
+#footer .copy {width: 100%; height: auto; float: none; margin-top: 20px; color: #aaa; text-align: center;}
+#footer .sns_box {width: 200px; height: 40px; float: none; margin: 20px auto; text-align: center;}
+#footer .sns_box a {display: inline-block; width:40px; height:40px; border-radius: 50%; overflow: hidden; background: #000;;}
+
+
+#popup {width: 300px; height: 400px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); background: #aa64cf; z-index: 7; font-size: 22px; display: none;}
+#popup button {font-size: 18px; position: absolute; right: 20px; bottom:20px; background: #333; color: #fff; padding: 10px 20px; border:0; cursor: pointer; }
+
+
+.modal {width: 100%; height: 100vh; background: rgba(0,0,0,0.85); position: fixed; top: 0; left: 0; z-index: 7; backdrop-filter: blur(5px); display: none;}
+
+#side_menu {width: 260px; height: 100vh; background: rgba(255,255,255,1); position: fixed; top: 0; left: -100%; z-index: 8; transition: .5s;}
+#side_menu.on {left: 0;}
+
+#hamburger {width: 20px; height: 20px;  position: absolute; top: 15px; left: 15px; z-index: 9;}
+#hamburger span {position: absolute; width: 100%; height: 2px; background: #000 ; top: 12px; transition: .2s;}
+#hamburger span::before,
+#hamburger span::after {content: ""; position: absolute; width: 100%; height: 100%; background: #000; transition: .2s;}
+#hamburger span::before {top: -6px;}
+#hamburger span::after {top: 6px;}
+
+#hamburger.on span {background: rgba(0,0,0,0);}
+#hamburger.on span::before {transform: rotate(45deg); top: 0;}
+#hamburger.on span::after {transform: rotate(-45deg); top: 0;}
+
+}
+
+@media screen and (max-width:410px){
+
+    #section > div .gallery ul::after {content: ""; display: block; clear: both;}
+    #section > div .gallery ul li {width:30%; float: left; margin-left: 0;  margin-right: 5%}
+    #section > div .gallery ul li:last-child {margin-right: 0;}
+
+    #section > div.banner_box ul::after {content: ""; display: block; clear: both;}
+    #section > div.banner_box ul li {width:30%; float: left; margin-left: 0;  margin-right: 5%}
+    #section > div.banner_box ul li:last-child {margin-right: 0;}
+    
+    #section > div.baro_box ul::after {content: ""; display: block; clear: both;}
+    #section > div.baro_box ul li {float: left ; margin:0 5% 5% 0; width: 47.5%;}
+    #section > div.baro_box ul li:nth-child(2n) {margin-right: 0;}
+}
