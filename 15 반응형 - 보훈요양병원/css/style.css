@@ -1,0 +1,724 @@
+/*pc*/
+@media screen and (min-width:1044px){
+
+  #header {width: 100%; height: 180px; background: #f3f3f3; position: fixed; top: 0; transition: .3s; z-index: 3}
+  #visual_main {width: 100%; height: 650px; background: #bbb; margin:180px auto 0 auto; transition: .3s; transform: scale(1);}
+  #visual_main.action { transform: scale(0.9)}
+  
+  #section1 {width: 100%; height: 377px; }
+  #section2 {width: 100%; height: 454px; background: url('../images/bg_section2.jpg') center bottom; background-attachment: fixed;}
+  #section3 {width: 100%; height: 245px; }
+  #section4 {width: 100%; height: 710px; background: #9e9b58;}
+  #footer {width: 100%; height: 226px; background: #66552c;}
+  
+  
+  
+  /*header*/
+  #header .sidemenu {display: none}
+  #header .topset {width: 1044px; margin: 0 auto}
+  #header .topset .language {float: left; width: 140px; height: 42px; line-height: 42px; text-indent: 40px; position: relative;}
+  #header .topset .language a {display: block; position: relative;}
+  #header .topset .language a span {position: absolute; width: 23px; height: 23px; left: 14px; top: 10px; background: url('../images/icons.png') no-repeat 2px -22px; }
+  #header .topset .language:hover a span {background-position: 2px 1px; transition: .3s}
+  
+  #header .topset .language .select_lang {width: 100%; position: absolute; background: #fff; padding: 10px 0 20px 0; box-shadow: 10px 10px 15px rgba(0,0,0,0.1); z-index: 3; display: none }
+  #header .topset .language .select_lang li {height: 30px; line-height: 30px; cursor: pointer;}
+  #header .topset .language .select_lang li:hover {background: #f9f9f9;}
+  
+  #header .topset .membership {float: right; height: 42px; line-height: 42px; }
+  #header .topset .membership a {width: 94px; display: block; float: left; text-indent: 30px; position: relative;}
+  #header .topset .membership a span {position: absolute; width: 23px; height: 23px; left: 5px; top: 10px; background: url('../images/icons.png') no-repeat; }
+  #header .topset .membership a.login span {background-position: -30px -22px}
+  #header .topset .membership a.login:hover span {background-position: -30px 1px; transition: .3s; }
+  #header .topset .membership a.join span {background-position: -30px -70px}
+  #header .topset .membership a.join:hover span {background-position: -30px -47px; transition: .3s;}
+  #header .topset .membership a.sitemap span {background-position: -30px -118px}
+  #header .topset .membership a.sitemap:hover span {background-position: -30px -95px; transition: .3s;}
+  
+  #header .topset h1 {width: 190px; height: 70px; position: absolute; top: 54px; left: 50%; margin-left: -85px; transition: .3s;}
+  #header .topset .gnb {width: 100%; height: 50px; float: left; margin-top: 88px; text-align: center; font-size: 0; transition: .3s}
+  #header .topset .gnb > li {height: 50px; line-height: 50px; font-size: 20px; display: inline-block; position: relative;}
+  #header .topset .gnb > li > a {display: block; padding: 0 2vw}
+  #header .topset .gnb > li:hover > a {color: #fff; background: #568f3d;}
+  
+  #header .topset .gnb > li .lnb {position: absolute; width: 100%; background: #5a9640; padding: 20px 0 30px 0; display: none}
+  #header .topset .gnb > li .lnb li {height: 42px; line-height: 42px; font-size: 18px; text-align: center; }
+  #header .topset .gnb > li .lnb li a {color: #fff; display: block;}
+  #header .topset .gnb > li .lnb li:hover a {background: #80bd4a;}
+  
+  
+  #header.action {height: 122px;}
+  #header.action h1 {top: 10px;}
+  #header.action .gnb {margin-top: 30px;}
+  
+  
+  
+  
+  
+  
+  
+  /*visual*/
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+  
+  
+  
+  
+  #section1 {text-align: center; font-size: 0;}
+  #section1 > div {width: 300px; height: 300px; display: inline-block; vertical-align: top; margin-top: 53px;}
+  #section1 > div:nth-child(2) {margin:53px 47px 0 47px}
+  
+  #section1 > div h3 {width: 100%; height: 50px; font-size: 24px; color: #333; text-align: left; position: relative;}
+  #section1 > div h3 a {position: absolute; width: 29px; height: 29px; top: 0; right: 0; background: #506a01;}
+  #section1 > div h3 a:before {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left:6px; background: #fff; transition: .2s}
+  #section1 > div h3 a:after {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left: 6px; background: #fff; transform: rotate(90deg); transition: .2s;}
+  
+  #section1 > div h3 a:hover:before {transform: rotate(90deg);}
+  #section1 > div h3 a:hover:after {transform: rotate(180deg);}
+  
+  #section1 > div li {width: 215px; height: 52px; font-size: 16px; color: #222; line-height: 52px; border-bottom: 1px solid #ddd; float: left; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+  #section1 > div li.day {width: 85px; text-align: right;}
+  
+  
+  #section1 .job h3 a {background: #7baf00;}
+  
+  
+  
+  
+  #section2 > div {width: 1040px; margin: 0 auto; padding-top: 30px}
+  #section2 > div p {height: 70px; margin-bottom:30px; text-align: center; font-size: 19px; color: #fff; line-height: 29px; }
+  #section2 > div p span {color: #cfdc2b;}
+  #section2 > div p .br_none {display: none}
+  
+  #section2 > div ul {text-align: center; font-size: 0; perspective:1000px }
+  #section2 > div ul li {width: 290px; height: 130px; background: rgba(255,255,255,0.2); display: inline-block; margin: 0 11px 22px 11px; transition: 0.5s; transform: rotateY(90deg); opacity: 1}
+  #section2 > div ul li.action {transform: rotateY(0deg); opacity: 1}
+  
+  #section2 > div ul li:hover {background: rgba(255,255,255,0.3); }
+  #section2 > div ul li a {display: block; height: 92px; padding-top: 38px; }
+  #section2 > div ul li a strong {font-size: 22px; color: #fff; display: block; height: 30px; }
+  #section2 > div ul li a i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; }
+  
+  #section2 > div ul li:nth-child(1) {transition-delay: 0}
+  #section2 > div ul li:nth-child(2) {transition-delay: 0.05s}
+  #section2 > div ul li:nth-child(3) {transition-delay: 0.1s}
+  #section2 > div ul li:nth-child(4) {transition-delay: 0.15s}
+  #section2 > div ul li:nth-child(5) {transition-delay: 0.2s}
+  #section2 > div ul li:nth-child(6) {transition-delay: 0.25s}
+  
+  
+  #section3 {text-align: center; font-size: 0}
+  #section3 a {width: 447px; height: 150px; display: inline-block; background: #495408; margin:49px 11px 0 11px}
+  #section3 a:nth-child(1) {background: #495408 url('../images/bg_section3_1.jpg') no-repeat right bottom; }
+  #section3 a:nth-child(2) {background: #495408 url('../images/bg_section3_2.jpg') no-repeat right bottom; }
+  
+  #section3 a div {margin: 44px 0 0 47px;}
+  #section3 a div span {display: block; width: 29px; height: 29px; background: #7baf00; float: left; position: relative;}
+  #section3 a div span:before,
+  #section3 a div span:after {content: ""; width: 10px; height: 2px; position: absolute; background: #fff; left: 10px; transform-origin: right;}
+  #section3 a div span:before {transform: rotate(45deg); top: 14px;}
+  #section3 a div span:after {transform: rotate(-45deg); top: 13px;}
+  
+  #section3 a:hover div span:before {animation: c1 0.3s}
+  @keyframes c1 {
+    0% {transform: rotate(45deg)}
+    50% {transform: rotate(0deg)}
+    100% {transform: rotate(45deg)}
+  }
+  #section3 a:hover div span:after {animation: c2 0.3s}
+  @keyframes c2 {
+    0% {transform: rotate(-45deg)}
+    50% {transform: rotate(0deg)}
+    100% {transform: rotate(-45deg)}
+  }
+  
+  
+  #section3 a div strong {font-size: 22px; color: #fff; display: block; height: 30px; float: left; margin-left: 10px;}
+  #section3 a div i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; float: left; width: 300px; margin-top: 8px; text-align: left;}
+  
+  
+  
+  #section4 h2 {height: 120px; font-size: 24px; line-height: 120px; text-align: center; color: #fff;}
+  #section4 ul {width: 1040px; margin: 0 auto;}
+  #section4 ul li {float: left; position: relative; overflow: hidden;}
+  #section4 ul li h3 {font-size: 24px; height: 36px; line-height: 36px; margin: 30px 0 0 20px;}
+  #section4 ul li p {font-size: 14px; margin-left: 20px}
+  #section4 ul li span {position: absolute; font-size: 100px; right: -15px; bottom: -25px; font-weight: bold; color: rgba(255,255,255,0.4);}
+  
+  #section4 ul li:nth-child(1) {width: 194px; height: 354px; margin:0 20px 20px 0; background: #e4e69d;}
+  #section4 ul li:nth-child(1) h3 {color: #5d5a4b;}
+  #section4 ul li:nth-child(1) p {color: #5d5a4b;}
+  
+  #section4 ul li:nth-child(2) {width: 294px; height: 184px; margin:0 20px 20px 0; background: #5d5a4b;}
+  #section4 ul li:nth-child(2) h3 {color: #dfdfa1;}
+  #section4 ul li:nth-child(2) p {color: #dfdfa1;}
+  
+  #section4 ul li:nth-child(3) {width: 195px; height: 184px; margin:0 20px 20px 0; background: #52a8a2;}
+  #section4 ul li:nth-child(3) h3 {color: #fff;}
+  #section4 ul li:nth-child(3) p {color: #59fef2;}
+  
+  #section4 ul li:nth-child(4) {width: 295px; height: 184px; background: #8e793e;}
+  #section4 ul li:nth-child(4) h3 {color: #fff;}
+  #section4 ul li:nth-child(4) p {color: #c5b075;}
+  
+  #section4 ul li:nth-child(5) {width: 510px; height: 149px; margin:0 20px 20px 0;  background: #5e6570;}
+  #section4 ul li:nth-child(5) h3 {color: #fff;}
+  #section4 ul li:nth-child(5) p {color: #7a8ca7;}
+  
+  #section4 ul li:nth-child(6) {width: 295px; height: 150px; margin:0 0 20px 0;  background: #e4e69d;}
+  #section4 ul li:nth-child(6) h3 {color: #5d5a4b;}
+  #section4 ul li:nth-child(6) p {color: #5d5a4b;}
+  
+  #section4 ul li:nth-child(7) {width: 194px; height: 167px; margin:0 20px 20px 0;  background: #f93c05;}
+  #section4 ul li:nth-child(7) h3 {color: #fff;}
+  #section4 ul li:nth-child(7) p {color: #fff;}
+  
+  #section4 ul li:nth-child(8) {width: 295px; height: 167px; margin:0 20px 0 0;  background: #605f33;}
+  #section4 ul li:nth-child(8) h3 {color: #fff;}
+  #section4 ul li:nth-child(8) p {color: #dfdfa1;}
+  
+  #section4 ul li:nth-child(9) {width: 510px; height: 167px; margin:0 0 0 0;  background: #9ab77f;}
+  #section4 ul li:nth-child(9) h3 {color: #fff;}
+  #section4 ul li:nth-child(9) p {color: #fff;}
+  
+  .pc {display: block !important;}
+  .tablet {display: none !important;}
+  .mobile {display: none !important;}
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*tablet*/
+  @media screen and (min-width:737px) and (max-width:1043px){
+  
+    #header {width: 100%; height: 180px; background: #f3f3f3; position: fixed; top: 0; transition: .3s; z-index: 3}
+    #visual_main {width: 100%;  background: #bbb; margin:180px auto 0 auto; transition: .3s; transform: scale(1);}
+    #visual_main.action { transform: scale(0.9)}
+    
+    #section1 {width: 100%; height: auto; }
+    #section2 {width: 100%; height: auto; background: url('../images/bg_section2.jpg') center bottom; background-attachment: fixed;}
+    #section3 {width: 100%; height: 245px; }
+    #section4 {width: 100%; height: auto; background: #9e9b58;}
+  
+    /* #section4:after {content: ""; clear: both; display: block;;} */
+    #footer {width: 100%; height: 226px; background: #66552c;}
+    
+    
+    
+    /*header*/
+    #header .sidemenu {display: none}
+    #header .topset {width: 100%; margin: 0 auto}
+    #header .topset .language {float: left; width: 140px; height: 42px; line-height: 42px; text-indent: 40px; position: relative;}
+    #header .topset .language a {display: block; position: relative;}
+    #header .topset .language a span {position: absolute; width: 23px; height: 23px; left: 14px; top: 10px; background: url('../images/icons.png') no-repeat 2px -22px; }
+    #header .topset .language:hover a span {background-position: 2px 1px; transition: .3s}
+    
+    #header .topset .language .select_lang {width: 100%; position: absolute; background: #fff; padding: 10px 0 20px 0; box-shadow: 10px 10px 15px rgba(0,0,0,0.1); z-index: 3; display: none }
+    #header .topset .language .select_lang li {height: 30px; line-height: 30px; cursor: pointer;}
+    #header .topset .language .select_lang li:hover {background: #f9f9f9;}
+    
+    #header .topset .membership {float: right; height: 42px; line-height: 42px; }
+    #header .topset .membership a {width: 94px; display: block; float: left; text-indent: 30px; position: relative;}
+    #header .topset .membership a span {position: absolute; width: 23px; height: 23px; left: 5px; top: 10px; background: url('../images/icons.png') no-repeat; }
+    #header .topset .membership a.login span {background-position: -30px -22px}
+    #header .topset .membership a.login:hover span {background-position: -30px 1px; transition: .3s; }
+    #header .topset .membership a.join span {background-position: -30px -70px}
+    #header .topset .membership a.join:hover span {background-position: -30px -47px; transition: .3s;}
+    #header .topset .membership a.sitemap span {background-position: -30px -118px}
+    #header .topset .membership a.sitemap:hover span {background-position: -30px -95px; transition: .3s;}
+    
+    #header .topset h1 {width: 190px; height: 70px; position: absolute; top: 54px; left: 50%; margin-left: -85px; transition: .3s;}
+    #header .topset .gnb {width: 100%; height: 50px; float: left; margin-top: 88px; text-align: center; font-size: 0; transition: .3s}
+    #header .topset .gnb > li {height: 50px; line-height: 50px; font-size: 20px; display: inline-block; position: relative;}
+    #header .topset .gnb > li > a {display: block; padding: 0 2vw}
+    #header .topset .gnb > li:hover > a {color: #fff; background: #568f3d;}
+    
+    #header .topset .gnb > li .lnb {position: absolute; width: 100%; background: #5a9640; padding: 20px 0 30px 0; display: none}
+    #header .topset .gnb > li .lnb li {height: 42px; line-height: 42px; font-size: 18px; text-align: center; }
+    #header .topset .gnb > li .lnb li a {color: #fff; display: block;}
+    #header .topset .gnb > li .lnb li:hover a {background: #80bd4a;}
+    
+    
+    #header.action {height: 122px;}
+    #header.action h1 {top: 10px;}
+    #header.action .gnb {margin-top: 30px;}
+    
+    
+    
+    
+    
+    
+    
+    /*visual*/
+          .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
+    
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+          }
+    
+    
+    
+    
+    #section1 {text-align: center; font-size: 0;}
+    #section1 > div {width: 40%; height: 300px; display: inline-block; vertical-align: top; margin:53px 5% 0 5%}
+    #section1 > div:nth-child(3) {width:90%; margin:10px 5% 0 5%}
+    
+    #section1 > div h3 {width: 100%; height: 50px; font-size: 24px; color: #333; text-align: left; position: relative;}
+    #section1 > div h3 a {position: absolute; width: 29px; height: 29px; top: 0; right: 0; background: #506a01;}
+    #section1 > div h3 a:before {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left:6px; background: #fff; transition: .2s}
+    #section1 > div h3 a:after {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left: 6px; background: #fff; transform: rotate(90deg); transition: .2s;}
+    
+    #section1 > div h3 a:hover:before {transform: rotate(90deg);}
+    #section1 > div h3 a:hover:after {transform: rotate(180deg);}
+    
+    #section1 > div li {width: 70%; height: 52px; font-size: 16px; color: #222; line-height: 52px; border-bottom: 1px solid #ddd; float: left; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    #section1 > div li.day {width: 30%; text-align: right;}
+    
+    
+    #section1 .job h3 a {background: #7baf00;}
+    
+    
+    
+    
+    #section2 > div {width: 100%; margin: 0 auto; padding-top: 30px}
+    #section2 > div p {height: 70px; margin-bottom:30px; text-align: center; font-size: 19px; color: #fff; line-height: 29px; }
+    #section2 > div p span {color: #cfdc2b;}
+    #section2 > div p .br_none {display: none}
+    
+    #section2 > div ul {text-align: center; font-size: 0; perspective:1000px }
+    #section2 > div ul li {width: 290px; height: 130px; background: rgba(255,255,255,0.2); display: inline-block; margin: 0 11px 22px 11px; transition: 0.5s; transform: rotateY(90deg); opacity: 1}
+    #section2 > div ul li.action {transform: rotateY(0deg); opacity: 1}
+    
+    #section2 > div ul li:hover {background: rgba(255,255,255,0.3); }
+    #section2 > div ul li a {display: block; height: 92px; padding-top: 38px; }
+    #section2 > div ul li a strong {font-size: 22px; color: #fff; display: block; height: 30px; }
+    #section2 > div ul li a i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; }
+    
+    #section2 > div ul li:nth-child(1) {transition-delay: 0}
+    #section2 > div ul li:nth-child(2) {transition-delay: 0.05s}
+    #section2 > div ul li:nth-child(3) {transition-delay: 0.1s}
+    #section2 > div ul li:nth-child(4) {transition-delay: 0.15s}
+    #section2 > div ul li:nth-child(5) {transition-delay: 0.2s}
+    #section2 > div ul li:nth-child(6) {transition-delay: 0.25s}
+    
+    
+    #section3 {text-align: center; font-size: 0}
+    #section3 a {width: 40%; height: 150px; display: inline-block; background: #495408; margin:49px 11px 0 11px}
+    #section3 a:nth-child(1) {background: #495408 url('../images/bg_section3_1.jpg') no-repeat right bottom; }
+    #section3 a:nth-child(2) {background: #495408 url('../images/bg_section3_2.jpg') no-repeat right bottom; }
+    
+    #section3 a div {margin: 44px 0 0 47px;}
+    #section3 a div span {display: block; width: 29px; height: 29px; background: #7baf00; float: left; position: relative;}
+    #section3 a div span:before,
+    #section3 a div span:after {content: ""; width: 10px; height: 2px; position: absolute; background: #fff; left: 10px; transform-origin: right;}
+    #section3 a div span:before {transform: rotate(45deg); top: 14px;}
+    #section3 a div span:after {transform: rotate(-45deg); top: 13px;}
+    
+    #section3 a:hover div span:before {animation: c1 0.3s}
+    @keyframes c1 {
+      0% {transform: rotate(45deg)}
+      50% {transform: rotate(0deg)}
+      100% {transform: rotate(45deg)}
+    }
+    #section3 a:hover div span:after {animation: c2 0.3s}
+    @keyframes c2 {
+      0% {transform: rotate(-45deg)}
+      50% {transform: rotate(0deg)}
+      100% {transform: rotate(-45deg)}
+    }
+    
+    
+    #section3 a div strong {font-size: 22px; color: #fff; display: block; height: 30px; float: left; margin-left: 10px;}
+    #section3 a div i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; float: left; width: 300px; margin-top: 8px; text-align: left;}
+    
+    
+    
+    #section4 h2 {height: 120px; font-size: 24px; line-height: 120px; text-align: center; color: #fff;}
+    #section4 ul {width: 85%; margin: 0 auto;}
+    #section4 ul li {float: left; position: relative; overflow: hidden;}
+    #section4 ul li h3 {font-size: 24px; height: 36px; line-height: 36px; margin: 30px 0 0 20px;}
+    #section4 ul li p {font-size: 14px; margin-left: 20px}
+    #section4 ul li span {position: absolute; font-size: 100px; right: -15px; bottom: -25px; font-weight: bold; color: rgba(255,255,255,0.4);}
+    
+    #section4 ul li:nth-child(1) {width: 32%; height: 200px; margin:0 2% 2% 0; background: #e4e69d;}
+    #section4 ul li:nth-child(1) h3 {color: #5d5a4b;}
+    #section4 ul li:nth-child(1) p {color: #5d5a4b;}
+    
+    #section4 ul li:nth-child(2) {width: 32%; height: 200px; margin:0 2% 2% 0; background: #5d5a4b;}
+    #section4 ul li:nth-child(2) h3 {color: #dfdfa1;}
+    #section4 ul li:nth-child(2) p {color: #dfdfa1;}
+    
+    #section4 ul li:nth-child(3) {width: 32%; height: 200px; margin:0 0 2% 0; background: #52a8a2;}
+    #section4 ul li:nth-child(3) h3 {color: #fff;}
+    #section4 ul li:nth-child(3) p {color: #59fef2;}
+    
+    #section4 ul li:nth-child(4) {width: 32%; height: 200px; margin:0 2% 2% 0;background: #8e793e;}
+    #section4 ul li:nth-child(4) h3 {color: #fff;}
+    #section4 ul li:nth-child(4) p {color: #c5b075;}
+    
+    #section4 ul li:nth-child(5) {width: 32%; height: 200px; margin:0 2% 2% 0; background: #5e6570;}
+    #section4 ul li:nth-child(5) h3 {color: #fff;}
+    #section4 ul li:nth-child(5) p {color: #7a8ca7;}
+    
+    #section4 ul li:nth-child(6) {width: 32%; height: 200px; margin:0 0 2% 0;  background: #e4e69d;}
+    #section4 ul li:nth-child(6) h3 {color: #5d5a4b;}
+    #section4 ul li:nth-child(6) p {color: #5d5a4b;}
+    
+    #section4 ul li:nth-child(7) {width: 32%; height: 200px; margin:0 2% 2% 0;  background: #f93c05;}
+    #section4 ul li:nth-child(7) h3 {color: #fff;}
+    #section4 ul li:nth-child(7) p {color: #fff;}
+    
+    #section4 ul li:nth-child(8) {width: 32%; height: 200px; margin:0 2% 2% 0; background: #605f33;}
+    #section4 ul li:nth-child(8) h3 {color: #fff;}
+    #section4 ul li:nth-child(8) p {color: #dfdfa1;}
+    
+    #section4 ul li:nth-child(9) {width: 32%; height: 200px; margin:0 0 2% 0; background: #9ab77f;}
+    #section4 ul li:nth-child(9) h3 {color: #fff;}
+    #section4 ul li:nth-child(9) p {color: #fff;}
+    
+    
+    .pc {display: none !important;}
+    .tablet {display: block !important;}
+    .mobile {display: none !important;}
+    }
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  /*mobile*/
+  @media screen and (max-width:736px){
+  
+    #header {width: 100%; height: 65px; background: #f3f3f3; position: absolute; top: 0; transition: .3s; z-index: 3}
+    #visual_main {width: 100%; background: #bbb; margin:65px auto 0 auto; transition: .3s; transform: scale(1);}
+    #visual_main.action { transform: scale(0.9)}
+    
+    #section1 {width: 100%; height: auto; }
+    #section2 {width: 100%; height: auto; background: url('../images/bg_section2.jpg') center bottom; background-attachment: fixed;}
+    #section3 {width: 100%; height: 360px; }
+    #section4 {width: 100%; height: auto; background: #9e9b58;}
+  
+    /* #section4:after {content: ""; clear: both; display: block;;} */
+    #footer {width: 100%; height: 226px; background: #66552c;}
+    
+    
+    
+    /*header*/
+    #header #sidemenu_box {width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: fixed; top:0; left:0; z-index: 7; display: none;}
+    #header .sidemenu {width: 280px; height: 100%; position: fixed; left: -100%; top:0; background: #7baf00; overflow: auto;}
+    #header .sidemenu h1 {width: 100%; height: 65px; background: #fff; text-align: center;}
+    #header .sidemenu .member {width: 100%; height: 40px; }
+    #header .sidemenu .member a {float: left; width: 50%; height: 40px; line-height: 40px; color: #fff; font-size: 16px; background: #6e970d; text-align: center;}
+    #header .sidemenu .member a:nth-child(2) {background: #597419;}
+    #header .sidemenu .m_gnb {width: 85%; margin: 45px auto 0 auto;}
+    #header .sidemenu .m_gnb > li {width: 100%; height: auto; line-height: 35px; border-bottom: 1px solid rgba(255,255,255,0.3); font-size: 18px;}
+    #header .sidemenu .m_gnb > li a {color:#fff83f; display: block;}
+    #header .sidemenu .m_gnb > li .lnb {padding: 8px 0 30px 20px; display: none;}
+    #header .sidemenu .m_gnb > li .lnb li {width: 100%; height: 35px; line-height: 35px; font-size: 16px;}
+    #header .sidemenu .m_gnb > li .lnb li a {color: #fff; display: block;}
+  
+  
+    #header #sidemenu_box .btn_close {width: 40px; height: 40px; position: absolute; top:9px; left:284px; }
+    #header #sidemenu_box .btn_close span {position: absolute; width: 22px; height: 2px; left:10px; top:20px; background: #fff;}
+    #header #sidemenu_box .btn_close span:nth-child(1) {transform: rotate(45deg);}
+    #header #sidemenu_box .btn_close span:nth-child(2) {transform: rotate(-45deg);}
+  
+    #header .hamberg {width: 40px; height: 40px; position: absolute; left: 9px; top: 9px}
+    #header .hamberg span {width: 22px; height: 2px; position: absolute; background: #000;}
+    #header .hamberg span:nth-child(1) {left: 9px; top: 14px; }
+    #header .hamberg span:nth-child(2) {left: 9px; top: 20px; }
+    #header .hamberg span:nth-child(3) {left: 9px; top: 26px; }
+    
+  
+
+
+  
+  
+    #header .topset {width: 100%; margin: 0 auto}
+    #header .topset .language {float: left; width: 140px; height: 42px; line-height: 42px; text-indent: 40px; position: relative; display: none;}
+    #header .topset .language a {display: block; position: relative;}
+    #header .topset .language a span {position: absolute; width: 23px; height: 23px; left: 14px; top: 10px; background: url('../images/icons.png') no-repeat 2px -22px; }
+    #header .topset .language:hover a span {background-position: 2px 1px; transition: .3s}
+    
+    #header .topset .language .select_lang {width: 100%; position: absolute; background: #fff; padding: 10px 0 20px 0; box-shadow: 10px 10px 15px rgba(0,0,0,0.1); z-index: 3; display: none }
+    #header .topset .language .select_lang li {height: 30px; line-height: 30px; cursor: pointer;}
+    #header .topset .language .select_lang li:hover {background: #f9f9f9;}
+    
+    #header .topset .membership {float: right; height: 42px; line-height: 42px; display: none;}
+    #header .topset .membership a {width: 94px; display: block; float: left; text-indent: 30px; position: relative;}
+    #header .topset .membership a span {position: absolute; width: 23px; height: 23px; left: 5px; top: 10px; background: url('../images/icons.png') no-repeat; }
+    #header .topset .membership a.login span {background-position: -30px -22px}
+    #header .topset .membership a.login:hover span {background-position: -30px 1px; transition: .3s; }
+    #header .topset .membership a.join span {background-position: -30px -70px}
+    #header .topset .membership a.join:hover span {background-position: -30px -47px; transition: .3s;}
+    #header .topset .membership a.sitemap span {background-position: -30px -118px}
+    #header .topset .membership a.sitemap:hover span {background-position: -30px -95px; transition: .3s;}
+    
+    #header .topset h1 {width: 190px; height: 70px; position: absolute; top: 0px; left: 50%; margin-left: -85px; transition: .3s;}
+    #header .topset .gnb {width: 100%; height: 50px; float: left; margin-top: 88px; text-align: center; font-size: 0; transition: .3s; display: none;}
+    #header .topset .gnb > li {height: 50px; line-height: 50px; font-size: 20px; display: inline-block; position: relative;}
+    #header .topset .gnb > li > a {display: block; padding: 0 2vw}
+    #header .topset .gnb > li:hover > a {color: #fff; background: #568f3d;}
+    
+    #header .topset .gnb > li .lnb {position: absolute; width: 100%; background: #5a9640; padding: 20px 0 30px 0; display: none}
+    #header .topset .gnb > li .lnb li {height: 42px; line-height: 42px; font-size: 18px; text-align: center; }
+    #header .topset .gnb > li .lnb li a {color: #fff; display: block;}
+    #header .topset .gnb > li .lnb li:hover a {background: #80bd4a;}
+    
+    
+    #header.action {height: 122px;}
+    #header.action h1 {top: 10px;}
+    #header.action .gnb {margin-top: 30px;}
+    
+    
+    
+    
+    
+    
+    
+    /*visual*/
+          .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
+    
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+          }
+    
+    
+    
+    
+    #section1 {text-align: center; font-size: 0;}
+    #section1 > div {width: 90%; height: 300px; display: inline-block; vertical-align: top; margin:10px 5% 0 5%}
+    
+    #section1 > div h3 {width: 100%; height: 50px; font-size: 24px; color: #333; text-align: left; position: relative;}
+    #section1 > div h3 a {position: absolute; width: 29px; height: 29px; top: 0; right: 0; background: #506a01;}
+    #section1 > div h3 a:before {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left:6px; background: #fff; transition: .2s}
+    #section1 > div h3 a:after {content:""; position: absolute; width: 18px; height: 2px; top: 14px; left: 6px; background: #fff; transform: rotate(90deg); transition: .2s;}
+    
+    #section1 > div h3 a:hover:before {transform: rotate(90deg);}
+    #section1 > div h3 a:hover:after {transform: rotate(180deg);}
+    
+    #section1 > div li {width: 70%; height: 52px; font-size: 16px; color: #222; line-height: 52px; border-bottom: 1px solid #ddd; float: left; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    #section1 > div li.day {width: 30%; text-align: right;}
+    
+    
+    #section1 .job h3 a {background: #7baf00;}
+    
+    
+    
+    
+    #section2 > div {width: 100%; margin: 0 auto; padding-top: 30px}
+    #section2 > div p {height: auto; margin-bottom:30px; text-align: center; font-size: 17px; color: #fff; line-height: 29px; }
+    #section2 > div p span {color: #cfdc2b;}
+    #section2 > div p .br_none {display: block}
+    
+    #section2 > div ul {text-align: center; font-size: 0; perspective:1000px }
+    #section2 > div ul li {width: 40%; height: 130px; background: rgba(255,255,255,0.2); display: inline-block; margin: 0 11px 22px 11px; transition: 0.5s; transform: rotateY(90deg); opacity: 1}
+    #section2 > div ul li.action {transform: rotateY(0deg); opacity: 1}
+    
+    #section2 > div ul li:hover {background: rgba(255,255,255,0.3); }
+    #section2 > div ul li a {display: block; height: 92px; padding-top: 38px; }
+    #section2 > div ul li a strong {font-size: 22px; color: #fff; display: block; height: 30px; }
+    #section2 > div ul li a i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; }
+    
+    #section2 > div ul li:nth-child(1) {transition-delay: 0}
+    #section2 > div ul li:nth-child(2) {transition-delay: 0.05s}
+    #section2 > div ul li:nth-child(3) {transition-delay: 0.1s}
+    #section2 > div ul li:nth-child(4) {transition-delay: 0.15s}
+    #section2 > div ul li:nth-child(5) {transition-delay: 0.2s}
+    #section2 > div ul li:nth-child(6) {transition-delay: 0.25s}
+    
+    
+    #section3 {text-align: center; font-size: 0}
+    #section3 a {width: 90%; height: 150px; display: inline-block; background: #495408; margin:20px 5% 0 5%}
+    #section3 a:nth-child(1) {background: #495408 url('../images/bg_section3_1.jpg') no-repeat right bottom; }
+    #section3 a:nth-child(2) {background: #495408 url('../images/bg_section3_2.jpg') no-repeat right bottom; }
+    
+    #section3 a div {margin: 44px 0 0 47px;}
+    #section3 a div span {display: block; width: 29px; height: 29px; background: #7baf00; float: left; position: relative;}
+    #section3 a div span:before,
+    #section3 a div span:after {content: ""; width: 10px; height: 2px; position: absolute; background: #fff; left: 10px; transform-origin: right;}
+    #section3 a div span:before {transform: rotate(45deg); top: 14px;}
+    #section3 a div span:after {transform: rotate(-45deg); top: 13px;}
+    
+    #section3 a:hover div span:before {animation: c1 0.3s}
+    @keyframes c1 {
+      0% {transform: rotate(45deg)}
+      50% {transform: rotate(0deg)}
+      100% {transform: rotate(45deg)}
+    }
+    #section3 a:hover div span:after {animation: c2 0.3s}
+    @keyframes c2 {
+      0% {transform: rotate(-45deg)}
+      50% {transform: rotate(0deg)}
+      100% {transform: rotate(-45deg)}
+    }
+    
+    
+    #section3 a div strong {font-size: 22px; color: #fff; display: block; height: 30px; float: left; margin-left: 10px;}
+    #section3 a div i {font-size: 13px; color: #afc188; font-style: normal; line-height: 16px; float: left; width: 100%; margin-top: 8px; text-align: left;}
+    
+    
+    
+    #section4 h2 {height: auto; font-size: 24px; line-height: 30px; text-align: center; color: #fff;padding: 15px 0;}
+    #section4 ul {width: 85%; margin: 0 auto;}
+    #section4 ul li {width: 32%; height: 140px; float: left; position: relative; overflow: hidden;}
+    #section4 ul li h3 {font-size: 24px; height: auto; line-height: 30px; margin: 30px 0 0 20px;}
+    #section4 ul li p {font-size: 14px; margin-left: 20px}
+    #section4 ul li span {position: absolute; font-size: 100px; right: -15px; bottom: -25px; font-weight: bold; color: rgba(255,255,255,0.4);}
+    
+    #section4 ul li:nth-child(1) {margin:0 2% 2% 0; background: #e4e69d;}
+    #section4 ul li:nth-child(1) h3 {color: #5d5a4b;}
+    #section4 ul li:nth-child(1) p {color: #5d5a4b;}
+    
+    #section4 ul li:nth-child(2) {margin:0 2% 2% 0; background: #5d5a4b;}
+    #section4 ul li:nth-child(2) h3 {color: #dfdfa1;}
+    #section4 ul li:nth-child(2) p {color: #dfdfa1;}
+    
+    #section4 ul li:nth-child(3) {margin:0 0 2% 0; background: #52a8a2;}
+    #section4 ul li:nth-child(3) h3 {color: #fff;}
+    #section4 ul li:nth-child(3) p {color: #59fef2;}
+    
+    #section4 ul li:nth-child(4) {margin:0 2% 2% 0;background: #8e793e;}
+    #section4 ul li:nth-child(4) h3 {color: #fff;}
+    #section4 ul li:nth-child(4) p {color: #c5b075;}
+    
+    #section4 ul li:nth-child(5) {margin:0 2% 2% 0; background: #5e6570;}
+    #section4 ul li:nth-child(5) h3 {color: #fff;}
+    #section4 ul li:nth-child(5) p {color: #7a8ca7;}
+    
+    #section4 ul li:nth-child(6) {margin:0 0 2% 0;  background: #e4e69d;}
+    #section4 ul li:nth-child(6) h3 {color: #5d5a4b;}
+    #section4 ul li:nth-child(6) p {color: #5d5a4b;}
+    
+    #section4 ul li:nth-child(7) {margin:0 2% 2% 0;  background: #f93c05;}
+    #section4 ul li:nth-child(7) h3 {color: #fff;}
+    #section4 ul li:nth-child(7) p {color: #fff;}
+    
+    #section4 ul li:nth-child(8) {margin:0 2% 2% 0; background: #605f33;}
+    #section4 ul li:nth-child(8) h3 {color: #fff;}
+    #section4 ul li:nth-child(8) p {color: #dfdfa1;}
+    
+    #section4 ul li:nth-child(9) {margin:0 0 2% 0; background: #9ab77f;}
+    #section4 ul li:nth-child(9) h3 {color: #fff;}
+    #section4 ul li:nth-child(9) p {color: #fff;}
+    
+    .pc {display: none !important;}
+    .tablet {display: none !important; }
+    .mobile {display: block !important;}
+      
+    }
+    
+    
