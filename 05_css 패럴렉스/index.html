@@ -16,7 +16,7 @@
             <li><a href="#">Halo, It's me!</a></li>
             <li><a href="#">I Like</a></li>
             <li><a href="#">My Work</a></li>
-            <li><a href="#">Talk to me</a></li>
+            <li><a href="#">Talk to</a></li>
         </ul>
     </header>
     <section id="s1">
@@ -26,7 +26,7 @@
                 <div class="text">
                     <em>날땐 <b>방방</b>뛰고 메뉴를 뚝딱</em>
                     <p>ESFP-T 
-                        <span>주위에 있으면 인생이 지루할 새가 없을 정도로 즉흥적이며 열정과 에너지가 넘치는 연예인형</span>
+                        <span>누구에게나 어디에서나 친절하고 활동적이며 열정과 에너지가 넘치는 연예인형</span>
                     </p>
                 </div>
                 <figure>
@@ -41,14 +41,14 @@
     <section id="s2">
         <article>
             <figure>
-                <img src="images/game_1.png" alt="">
+                <img src="images/cookie_t.png" alt="">
             </figure>
-            <strong>는 시간에 하는 GAME</strong>
+            <strong> 쉴때 쿠키 구워 낭만적이지?</strong>
             <p>
-                이제 그만 끊고<br>
-                그 시간에 한글자라도 더<br>
-                디다보고 싶다
+                모든 맛을 아우르는<br>
+                쿠키의 세계로!
             </p>
+
         </article>
     </section>
 
@@ -56,7 +56,8 @@
     <section id="s3">
         <div class="text_box">
             <div class="text">
-                의뢰자들도 맘에들어한 작업물모음
+                
+                우린함께 하늘위로 날아올라
             </div>
             <button type="button">CLICK!</button>
         </div>
@@ -80,7 +81,7 @@
 
 
     <section id="s4">
-        <iframe src="https://www.nate.com/" frameborder="0"></iframe>
+        <iframe src="http://jjww.dothome.co.kr/hi" frameborder="0"></iframe>
     </section>
 
     <div class="btn"><a href="#"></a></div>
@@ -105,7 +106,7 @@
 
                 if(winH*go == 0){
                 $('.gnb a').css({color:'white'})
-                $('.gnb a').eq(0).css({color:'orange'})
+                $('.gnb a').eq(0).css({color:'#fcd268'})
                 }
                 if(winH*go >= winH*1){
                 $('.gnb a').css({color:'white'})
@@ -113,11 +114,11 @@
                 }
                 if(winH*go >= winH*2){
                 $('.gnb a').css({color:'white'})
-                $('.gnb a').eq(2).css({color:'orange'})
+                $('.gnb a').eq(2).css({color:'#f3dae4'})
                 }
                 if(winH*go >= winH*3){
-                $('.gnb a').css({color:'purple'})
-                $('.gnb a').eq(3).css({color:'orange'})
+                $('.gnb a').css({color:'white'})
+                $('.gnb a').eq(3).css({color:'#fc7595'})
                 }
             
             })
@@ -126,7 +127,7 @@
             var scrT
             $(window).scroll(function(){
                 scrT = $(window).scrollTop();
-                
+                winH = $(window).height();
                 setTimeout(nolja, 500)
             })
 
@@ -139,7 +140,7 @@
             function nolja(){
                 if(scrT >= 0){
                     $('.gnb a').css({color:'white'});
-                    $('.gnb a').eq(0).css({color:'orange'});
+                    $('.gnb a').eq(0).css({color:'#fcd268'});
                 }
                 if(scrT >= winH*1){
                     $('.gnb a').css({color:'white'});
@@ -147,11 +148,11 @@
                 }
                 if(scrT >= winH*2){
                     $('.gnb a').css({color:'white'});
-                    $('.gnb a').eq(2).css({color:'orange'});
+                    $('.gnb a').eq(2).css({color:'#f3dae4'});
                 }
                 if(scrT >= winH*3){
-                    $('.gnb a').css({color:'purple'});
-                    $('.gnb a').eq(3).css({color:'orange'});
+                    $('.gnb a').css({color:'white'});
+                    $('.gnb a').eq(3).css({color:'#fc7595'});
                 }
             }
 
